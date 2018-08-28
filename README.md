@@ -2,7 +2,7 @@
 ## @TODO
 * Configuring Firebase Host
 * Needs some designs
-* Needs some Firebase Function (@heechan)
+* Needs some Firebase Function (@yangroro)
 * I want go sleep 😪
 
 ## Dev
