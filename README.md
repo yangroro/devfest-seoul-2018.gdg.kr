@@ -16,3 +16,9 @@ $ npm run dev
 $ npm run build
 $ npm run start
 ```
+
+## Hosting
+```
+$ npm install -g firebase-tools
+$ npm run deploy
+```
