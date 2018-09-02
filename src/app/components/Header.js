@@ -3,9 +3,18 @@ import React, { Component } from 'react';
 export default class Header extends Component {
   render() {
     return (
-      <header className="app-header">
-        <h1>DevFest Seoul 2018</h1>
-        <h2>2018년 11월 10일 from 세종대학교 광개토관</h2>
+      <header className="header">
+        <div className="header-container">
+          <h1 className="logo">DEVFEST 2018</h1>
+          <nav className="main-nav">
+            <ul>
+              <li><a href="#">Speakers</a></li>
+              <li><a href="#">Session</a></li>
+              <li><a href="#">Code of Conduct</a></li>
+            </ul>
+            <a href="#" className="btn">신청하기</a>
+          </nav>
+        </div>
       </header>
     )
   }
