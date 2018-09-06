@@ -1,20 +1,25 @@
 import Head from 'next/head';
-import Byline from '../components/Byline';
-import Header from '../components/Header';
-import CoC from '../components/CoC';
 import Place from '../components/Place';
 import GDG from '../components/GDG';
 import DevFest from '../components/DevFest';
+import Hero from '../components/Hero';
+import Programs from '../components/Programs';
+import Sponsor from '../components/Sponsor';
+import Speaker from '../components/Speaker';
 
 export default () => (
   <div>
     <Head>
       <title>DevFest Seoul 2018</title>
     </Head>
-    <Header />
-    <CoC />
-    <Place />
-    <DevFest />
-    <GDG />
+    <main>
+      <Hero />
+      <DevFest />
+      <GDG />
+      <Programs />
+      <Sponsor />
+      <Speaker />
+      <Place />
+    </main>
   </div>
 )

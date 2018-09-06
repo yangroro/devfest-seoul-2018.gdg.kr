@@ -1,19 +1,16 @@
 import React, { Component } from 'react';
+import Nav from './Nav';
 
 export default class Header extends Component {
   render() {
     return (
       <header className="header">
         <div className="header-container">
+          <button class="tab hamburger" on="tap:sidebar.toggle">
+            OPEN
+          </button>
           <h1 className="logo">DEVFEST 2018</h1>
-          <nav className="main-nav">
-            <ul>
-              <li><a href="#">Speakers</a></li>
-              <li><a href="#">Session</a></li>
-              <li><a href="#">Code of Conduct</a></li>
-            </ul>
-            <a href="#" className="btn">신청하기</a>
-          </nav>
+          <Nav className="main-nav"/>
         </div>
       </header>
     )

@@ -1,4 +1,7 @@
 import Document, { Head } from 'next/document'
+import SideNav from '../components/SideNav';
+import Header from '../components/Header';
+import Footer from '../components/Footer';
 
 export default class MyDocument extends Document {
   render () {
@@ -9,25 +12,50 @@ export default class MyDocument extends Document {
           <link rel='canonical' href='/' />
           <meta name='viewport' content='width=device-width,minimum-scale=1' />
           <style amp-boilerplate=''>{`body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}`}</style><noscript><style amp-boilerplate=''>{`body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}`}</style></noscript>
-          <style amp-custom=''>{`
-            h1,h2,h3,h4,h5,h6,ul,ol,li{margin:0;padding:0}
-            a{text-decoration:none;}
-            ul,ol,li{list-style:none;}
-            body{font-size:22px;font-family:APPLE SD Gothic NEO,sans-serif;padding:90px 0 0}
-            .header{position:fixed;top:0;left:0;right:0;background:#00796b}
-            .header-container{display:flex;justify-content:space-between;min-width:1440px;margin:auto;}
-            .logo{font-size:43px;font-weight:900;color:#ffffff;padding:19px 0 19px 102px;}
-            .main-nav{display:flex;margin-right:122px;align-items:center}
-            .main-nav a{color:white;}
-            .main-nav ul{display:flex;font-size:20px;padding:33px 0;}
-            .main-nav li{margin-right:66px}
-            .main-nav ul a{display:block;font-weight:300}
-            .btn{font-weight:bold;padding:7px 15px 6px;border:2px solid #fff;border-radius:19.5px}
-          `}</style>
+          <style amp-custom='' dangerouslySetInnerHTML={{
+            __html: `h1,h2,h3,h4,h5,h6,ul,ol,li,p{margin:0;padding:0;list-style:none;}
+            a{color:inherit;text-decoration:none}
+            body{padding-top:74px;font-size:14px;font-weight:500;font-family:APPLE SD Gothic NEO, sans-serif;color:#464646}
+            .header{position:fixed;top:0;left:0;right:0;padding:16px;background:#00796b;box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.5);z-index:1000}
+            .header h1{font-size:20px;font-weight:500;color:rgba(255,255,255,0.87);letter-spacing:-.3px;}
+            .main-nav{display:none}
+            amp-sidebar{width:84.375%;background:white;padding:35px 0;}
+            .side-nav a{display:block;padding:11px 12px;font-size:20px;color:#6f6f6f}
+            .hero{position:relative;padding-top:137.5%;max-height:900px;background:#8bc34a;color:white;box-sizing:border-box}
+            .hero-contents{position:absolute;top:50%;left:0;right:0;transform:translate(0, -50%);text-align:center;text-shadow:0 2px 4px rgba(0, 0, 0, 0.5)}
+            .hero-contents h1{font-size:32px;font-weight:800}
+            .btn-set{margin-top:20px;}
+            .btn{display:inline-block;padding:7px 21px 6px;margin:0 15px;border-radius:15px;background-color:#00796b;box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.5)}
+            .link-set{margin-top:11px;text-align:right}
+            .link-set a{display:inline-block;color:#00796b;font-weight:bold;}
+            .link-set a + a {margin-left:27px;}
+            .section {margin:35px 20px;color:#000}
+            .section p {margin:15px 0 0}
+            .section h1 {font-size:20px;margin-bottom: 25px}
+            .program-hero {}
+            .program-hero section {padding:20px}
+            .program-hero section::before {content:"frame";display:block;width:201px;height:168px;margin-bottom:17px}
+            .program-hero section:nth-of-type(1) {background-color:#8bc34a}
+            .program-hero section:nth-of-type(2) {background-color:#00b39e}
+            .program-hero section:nth-of-type(3) {background-color:#6a9f39}
+            .program-hero section:nth-of-type(4) {background-color:#56a6fb}
+            .place-info {}
+            .place-info .place-card {margin:20px;background:white;box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.5);padding-bottom:0.1px}
+            .place-info .place-card h1 {padding:119px 15px 5px;background:black;color:white;font-size:20px}
+            .place-info .place-card p {font-weight:300;margin:12px 15px}
+            .footer {background-color:#f5f5f5;padding:20px;color:#464646}
+            .contact h1 {font-size:20px}
+            .contact p {font-weight:300}
+            `}} />
           <script async src='https://cdn.ampproject.org/v0.js' />
+          <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+          <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
         </Head>
         <body>
+          <Header />
+          <SideNav />
           <div id='__next' dangerouslySetInnerHTML={{ __html: html }} />
+          <Footer />
         </body>
       </html>
     )
