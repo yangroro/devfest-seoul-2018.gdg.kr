@@ -14,8 +14,10 @@ export default () => (
     </Head>
     <main>
       <Hero />
-      <DevFest />
-      <GDG />
+      <div className="info">
+        <DevFest />
+        <GDG />
+      </div>
       <Programs />
       <Sponsor />
       <Speaker />

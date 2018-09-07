@@ -4,7 +4,7 @@ export default class Place extends Component {
   render() {
     return (
       <section>
-        <h1>Place</h1>
+        <h1 className="blind">Place</h1>
         <div className="place-info">
           <amp-iframe width="320" 
             height="182" 
