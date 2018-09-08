@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Link from 'next/link'
 
 export default class SideNav extends Component {
   constructor(props) {
@@ -10,7 +11,7 @@ export default class SideNav extends Component {
         <ul>
           <li><a href="#">Speakers</a></li>
           <li><a href="#">Session</a></li>
-          <li><a href="#">Code of Conduct</a></li>
+          <li><Link href="/code_of_conduct"><a>Code of Conduct</a></Link></li>
           <li><a href="#">신청하기</a></li>
         </ul>
       </nav>

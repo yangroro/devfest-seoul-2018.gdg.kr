@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export default class CoC extends Component {
   render() {
     return (
-      <section className="app-description --code-of-conduct">
+      <section className="section">
         <h1>Code of Conduct</h1>
         <p>Google I/O Extended Seoul 은 개발자 지향 콘퍼런스로서 권리 침해 없는 행사를 위하여 타인에게 불쾌감을 줄 수 있는 성 정체성, 성적 취향, 장애, 외모, 민족, 국적, 인종, 나이, 정치, 종교 등에 대한 발언은 금지합니다.</p>
         <p>행동강령은 Google Developers Group 행사에 참여하는 모든 개인에게 해당하며 위반 시 퇴장 등의 제재를 받을 수 있습니다. 행동강령 위반 사례에 대한 내용은 공개될 수 있습니다. </p>
