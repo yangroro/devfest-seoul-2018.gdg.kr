@@ -15,7 +15,7 @@ export default class MyDocument extends Document {
           <style amp-custom='' dangerouslySetInnerHTML={{
             __html: `h1,h2,h3,h4,h5,h6,ul,ol,li,p{margin:0;padding:0;list-style:none;}
             a{color:inherit;text-decoration:none}
-            body{font-size:14px;line-height:1.5;font-weight:500;font-family:APPLE SD Gothic NEO, sans-serif;color:#464646}
+            body{font-size:14px;line-height:1.5;font-weight:500;font-family:APPLE SD Gothic NEO, sans-serif;color:#464646;word-break:keep-all}
             .blind{display:none}
             .header{position:fixed;top:0;left:0;right:0;padding:16px;background:#00796b;box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.5);z-index:1000}
             .header h1{font-size:20px;font-weight:500;color:rgba(255,255,255,0.87);letter-spacing:-.3px;}
