@@ -15,7 +15,7 @@ export default class MyDocument extends Document {
           <style amp-custom='' dangerouslySetInnerHTML={{
             __html: `h1,h2,h3,h4,h5,h6,ul,ol,li,p{margin:0;padding:0;list-style:none;}
             a{color:inherit;text-decoration:none}
-            body{padding-top:74px;font-size:14px;line-height:1.5;font-weight:500;font-family:APPLE SD Gothic NEO, sans-serif;color:#464646}
+            body{font-size:14px;line-height:1.5;font-weight:500;font-family:APPLE SD Gothic NEO, sans-serif;color:#464646}
             .blind{display:none}
             .header{position:fixed;top:0;left:0;right:0;padding:16px;background:#00796b;box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.5);z-index:1000}
             .header h1{font-size:20px;font-weight:500;color:rgba(255,255,255,0.87);letter-spacing:-.3px;}
@@ -50,6 +50,15 @@ export default class MyDocument extends Document {
             @media(min-width:960px) {
               body {font-size:16px}
               h1 {font-size:1.6em}
+              .tab.hamburger{display:none}
+              .header-container{display:flex;align-items:center;justify-content:space-between}
+              .main-nav{display:block}
+              .main-nav ul{display:flex;align-items:center}
+              .main-nav li{margin:0 25px}
+              .main-nav a{color:white}
+              .hero h1 {font-size:72px}
+              .hero p {font-size:25.6px}
+              .hero a {font-size:25.6px}
               .info {display:flex;width:940px;margin:auto}
               .info .section {width:456px}
               .info .section + .section {margin-left:24px}
