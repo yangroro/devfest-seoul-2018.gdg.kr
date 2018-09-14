@@ -5,12 +5,14 @@ export default class SideNav extends Component {
     return (
       <div className="hero">
         <div className="hero-contents">
-          <h1>GDG DevFest<br/>Seoul 2018</h1>
-          <p>2018년 11월 10일(토) @세종대학교 광개토관</p>
-          <div className="btn-set">
-            <a href="#" className="btn">티켓구매</a>
-            <a href="#" className="btn">신청하기</a>
-          </div>
+          <h1>
+            <amp-img src="/static/hero-title.png"
+              layout="responsive"
+              width="799px"
+              height="403px"
+              alt="DevFest Seoul 2018 - BUILD FOR DIGITAL WELLBEING"
+              ></amp-img>
+          </h1>
         </div>
       </div>
     )
