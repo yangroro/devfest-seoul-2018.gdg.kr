@@ -8,7 +8,7 @@ export default class Footer extends Component {
           <div className="footer-info">
             <div className="contact">
               <h1>Contact us</h1>
-              <p>devfest-seoul-2018@googlegroups.com</p>
+              <p><a href="mailto:devfest-seoul-2018@googlegroups.com">devfest-seoul-2018@googlegroups.com</a></p>
             </div>
             <div className="logo">
               <img src="/static/gdg-logo.png" />
