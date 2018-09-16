@@ -68,6 +68,8 @@ export default class MyDocument extends Document {
             .contact p {font-weight:300}
             .coc p {margin:15px 0}
             .coc .coc-mail {color: #00796b;text-decoration: underline}
+            .coc-section {margin-top: 22px;margin-bottom:40px;}
+            .coc-section .coc-lang {display:inline-block;background-color:#00796b;color:#ffffff;font-size:1.6em;padding:5px 8px;}
             @media(min-width:960px) {
               body {font-size:16px}
               h1 {font-size:1.6em}
@@ -78,6 +80,7 @@ export default class MyDocument extends Document {
               .main-nav ul{display:flex;align-items:center}
               .main-nav li{margin:0 25px}
               .main-nav a{color:white}
+              .main-nav .home{display:none}
               .hero {background-image:url(/static/hero-bg.jpg)}
               .hero-contents::after {width:1117px;height:363px;padding:0;background-image:url(/static/hero-camp.png);margin:auto}
               .info {display:flex;width:940px;margin:auto}
@@ -96,9 +99,8 @@ export default class MyDocument extends Document {
               .footer-info {display:flex;justify-content:space-between;align-items:center;margin-bottom:55px}
               .contact h1 {font-size:32px;font-weight:bold}
               .contact p {font-size:20px;color:#464646}
-              .coc .coc-language{margin-left:13px;font-size:17px}
-              .coc .coc-language a{margin-right:6px;}
-              .coc .coc-language a:hover{color:#00796b;text-decoration:underline}
+              .coc-section {margin-top: 35px;margin-bottom:65px;}
+              .coc-section .coc-lang{margin-bottom: 7px;}
             }
             `}} />
           <script async src='https://cdn.ampproject.org/v0.js' />

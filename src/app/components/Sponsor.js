@@ -9,8 +9,8 @@ export default class Sponsor extends Component {
         <p>현재 Google의 최신 기술을 여러분의 서비스에 적용하고 계신가요? 새로운 서비스의 홍보가 필요한가요? 함께할 개발자를 모집하고자 하시나요? 개발자들의 축제 DevFest에서 다양한 방법으로 여러분의 회사를 홍보해보세요!</p>
         <p>자세한 내용은 아래 신청폼을 통해 문의주세요.</p>
         <div className="link-set">
-          <a href="#" className="link">이메일 문의하기</a>
-          <a href="#" className="link">신청 폼 작성하기</a>
+          <a href="mailto:devfest-seoul-2018@googlegroups.com" className="link">이메일 문의하기</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVf1gYkLF3LVnZc5U8cpapBiIWMMqxiVpEXH9Sx4pB_Sgz6A/viewform" target="blank" className="link">신청 폼 작성하기</a>
         </div>
       </section>
     )
