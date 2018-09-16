@@ -9,8 +9,8 @@ export default class SideNav extends Component {
     return (
       <nav className={this.props.className}>
         <ul>
-          <li><a href="#">Speakers</a></li>
-          <li><a href="#">Session</a></li>
+          {/* <li><a href="#">Speakers</a></li>
+          <li><a href="#">Session</a></li> */}
           <li><Link href="/code_of_conduct"><a>Code of Conduct</a></Link></li>
           <li><a href="#">신청하기</a></li>
         </ul>
