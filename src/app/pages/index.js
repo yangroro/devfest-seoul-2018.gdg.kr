@@ -10,7 +10,7 @@ import Speaker from '../components/Speaker';
 export default () => (
   <div>
     <Head>
-      <title>DevFest Seoul 2018</title>
+      <title>GDG DevFest Seoul 2018</title>
     </Head>
     <main>
       <Hero />
