@@ -6,13 +6,9 @@ export default class CoC extends Component {
       <section className="section">
         <h1>
           Code of Conduct
-          <span className="coc-language">
-            <a href="#coc-korean">한국어</a>
-            <a href="#coc-english">English</a>
-          </span>
         </h1>
-        <section>
-          <a className="coc-language-select" name="coc-korean">한국어</a>
+        <section className="coc-section">
+          <div className="coc-lang">한국어</div>
           <p>DevFest Seoul 2018 은 개발자 지향 콘퍼런스로서 권리 침해 없는 행사를 위하여 타인에게 불쾌감을 줄 수 있는 성 정체성, 성적 취향, 장애, 외모, 민족, 국적, 인종, 나이, 정치, 종교 등에 대한 발언은 금지합니다.</p>
           <p>행동강령은 Google Developers Group 행사에 참여하는 모든 개인에게 해당하며 위반 시 퇴장 등의 제재를 받을 수 있습니다. 행동강령 위반 사례에 대한 내용은 공개될 수 있습니다. </p>
           <section>
@@ -39,8 +35,8 @@ export default class CoC extends Component {
           <p>운영진은 참가자에게 흔쾌히 도움을 주어야 하며 참가자의 안전을 지키기 위한 노력을 해야합니다. 그 노력에는 참가자 보호, 경찰/사법기관으로의 연락을 포함합니다.</p>
         </section>
 
-        <section>
-          <a className="coc-language-select" name="coc-english">English</a>
+        <section className="coc-section">
+          <div className="coc-lang">English</div>
           <p>GDG DevFest Seoul 2018 is a Developer-oriented event. To provide you with an event without infringement of rights, any statements that may offend others regarding gender identity, sexual orientation, disabilities, neurodiversity, physical appearance, body size, ethnicity, nationality, race, age, religion, or other protected category are prohibited.</p>
           <p>This Code of Conduct must be followed by every single person who attends events of the Google Developers Group. Any attempt to violate this guideline may result in sanctions such as members being removed. Cases of violation may be disclosed to the public.</p>
           <section>
