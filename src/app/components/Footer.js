@@ -11,10 +11,14 @@ export default class Footer extends Component {
               <p>devfest-seoul-2018@googlegroups.com</p>
             </div>
             <div className="logo">
-              GDG Korea
+              <img src="/static/gdg-logo.png" />
             </div>
           </div>
-          <p>Copyright all right reserved GDG Korea</p>
+          <p className="copyright">
+          <b>© DevFest Seoul 2018</b> <br />
+          Designed: Eunjeong Kim, Nayeon Kim <br />
+          Developed: Eun Cho, Heechan Yang, Shinye Song <br />
+          </p>
         </div>
       </footer>
     )

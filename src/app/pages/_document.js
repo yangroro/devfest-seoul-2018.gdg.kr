@@ -34,25 +34,28 @@ export default class MyDocument extends Document {
             .hero-contents::after{content:'';display:block;width:100%;padding-top:54.875%;background:url(/static/hero-camp@m.png) 0 0 no-repeat;background-size:cover;}
             .btn-set{margin-top:20px;}
             .btn{display:inline-block;padding:7px 21px 6px;margin:0 15px;border-radius:15px;background-color:#00796b;box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.5)}
-            .link-set{margin-top:11px;text-align:right}
+            .link-set{margin-top:20px;text-align:right}
             .link-set a{display:inline-block;color:#00796b;font-weight:bold;}
             .link-set a + a {margin-left:27px;}
-            .section {margin:35px 20px;color:#000}
+            .section {margin:45px 25px;color:#000}
             .section p {margin:15px 0 0}
             .section > h1 {font-size:2em}
             .section > section > h1 {font-size: 1.3em;margin:1.5em 0 1em}
             .dino-wrapper {margin:21px 1.875% 31px}
             .program-hero {}
-            .program-hero section {padding:20px;box-sizing:border-box;color:white;text-align:center}
+            .program-hero section {padding:50px 20px 20px 20px;box-sizing:border-box;color:white;text-align:center}
             .program-hero .program-image {padding:0 12.5% 20px}
             .program-hero section:nth-of-type(1) {background-color:#8bc34a}
             .program-hero section:nth-of-type(2) {background-color:#00b39e}
             .place-info {position:relative}
-            .place-info .place-card {margin:20px;background:white;box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.5);padding-bottom:0.1px}
-            .place-info .place-card h1 {padding:119px 15px 5px;background:black;color:white;font-size:20px}
+            .place-info .place-card {margin:20px 20px 39px 20px;background:white;box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.5);padding-bottom:0.1px}
+            .place-info .place-card h1 {padding:119px 15px 5px;background-image:url(/static/venue.jpg);background-size:cover;background-position:center;color:white;font-size:20px;text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);}
             .place-info .place-card p {font-weight:300;margin:12px 15px}
             .footer {background-color:#f5f5f5;padding:20px;color:#464646;}
             .footer-container {max-width:940px;margin:auto}
+            .footer-container .logo {margin-top:27px;margin-bottom: 29px}
+            .footer-container img {width:140px}
+            .footer-container .copyright {color:#afafaf;}
             .contact h1 {font-size:20px}
             .contact p {font-weight:300}
             .coc p {margin:15px 0}
@@ -71,17 +74,18 @@ export default class MyDocument extends Document {
               .info .section {width:456px}
               .info .section + .section {margin-left:24px}
               .hero {padding:0;height:900px}
-              .section {width:940px;margin:35px auto}
-              .program-hero {display:flex;flex-wrap:wrap;width:940px;margin:35px auto}
+              .section {width:940px;margin:47px auto}
+              .program-hero {display:flex;flex-wrap:wrap;width:940px;margin:0px auto}
               .program-hero section {width:460px;margin:16px 0}
               .program-hero section:nth-of-type(2n) {margin-left:18px}
               .place-card {position:absolute;right:132px;top:52px;width:456px;height:457px}
               .place-info .place-card h1 {padding:175px 25px 24px}
               .place-info .place-card p {margin:18px 25px}
-              .footer {margin-top:96px}
-              .footer-info {display:flex;justify-content:space-between;align-items:center}
+              .footer {margin-top:96px;padding-top:78px;padding-bottom:57px}
+              .footer-container img {width:215px}
+              .footer-info {display:flex;justify-content:space-between;align-items:center;margin-bottom:55px}
               .contact h1 {font-size:32px;font-weight:bold}
-              .contact p {font-size:20px;color:#afafaf;margin-top:65px}
+              .contact p {font-size:20px;color:#464646}
             }
             `}} />
           <script async src='https://cdn.ampproject.org/v0.js' />
