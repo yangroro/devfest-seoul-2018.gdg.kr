@@ -86,6 +86,7 @@ export default class MyDocument extends Document {
               .info {display:flex;width:940px;margin:auto}
               .info .section {width:456px}
               .info .section + .section {margin-left:24px}
+              .section + .speaker{margin-bottom:75px}
               .hero {padding:0;height:900px}
               .section {width:940px;margin:47px auto}
               .program-hero {display:flex;flex-wrap:wrap;width:940px;margin:0px auto}
