@@ -8,7 +8,6 @@ export default () => (
       <title>DevFest Seoul 2018 - Schedule</title>
     </Head>
     <main className="coc">
-      <Hero />
       <CoC />
     </main>
   </div>
