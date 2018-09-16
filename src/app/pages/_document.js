@@ -2,6 +2,7 @@ import Document, { Head } from 'next/document'
 import SideNav from '../components/SideNav';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
+import Ga from "../components/Ga";
 
 export default class MyDocument extends Document {
   render () {
@@ -9,7 +10,13 @@ export default class MyDocument extends Document {
     return (
       <html amp=''>
         <Head>
-          <link rel='canonical' href='/' />
+          <link rel='canonical' href='https://devfest-seoul18.gdg.kr/' />
+          <meta property="og:title" content="GDG DevFest Seoul 2018" />
+          <meta property="og:type" content="website" />
+          <meta property="og:image" content="https://devfest-seoul18.gdg.kr/static/hero-title.png" />
+          <meta property="og:url" content="https://devfest-seoul18.gdg.kr/" />
+          <meta property="og:description" content="GDG 행사 중 가장 큰 개발자 축제인 DevFest Seoul 2018이 11월 10일 토요일 세종대학교 컨벤션센터에서 열립니다!" />
+          <meta property="og:site_name" content="GDG DevFest Seoul 2018" />
           <meta name='viewport' content='width=device-width,minimum-scale=1' />
           <style amp-boilerplate=''>{`body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}`}</style><noscript><style amp-boilerplate=''>{`body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}`}</style></noscript>
           <style amp-custom='' dangerouslySetInnerHTML={{
@@ -97,8 +104,10 @@ export default class MyDocument extends Document {
           <script async src='https://cdn.ampproject.org/v0.js' />
           <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
           <script async custom-element="amp-iframe" src="https://cdn.ampproject.org/v0/amp-iframe-0.1.js"></script>
+          <script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
         </Head>
         <body>
+          <Ga />
           <Header />
           <SideNav />
           <div id='__next' dangerouslySetInnerHTML={{ __html: html }} />
