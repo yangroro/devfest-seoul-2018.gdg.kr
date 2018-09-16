@@ -23,6 +23,7 @@ export default class MyDocument extends Document {
             .header{position:fixed;top:0;left:0;right:0;padding:16px;background:#00796b;box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.5);z-index:1000}
             .header h1{font-size:20px;font-weight:500;color:rgba(255,255,255,0.87);letter-spacing:-.3px}
             .header-container{display:flex;align-items:center;}
+            .header-container .logo img{display:none}
             .tab.hamburger{display:block;padding:0;margin:0;margin-right:23px}
             .main-nav{display:none}
             amp-sidebar{width:84.375%;background:white;padding:35px 0;}
@@ -59,11 +60,13 @@ export default class MyDocument extends Document {
             .contact h1 {font-size:20px}
             .contact p {font-weight:300}
             .coc p {margin:15px 0}
+            .coc .coc-mail {color: #00796b;text-decoration: underline}
             @media(min-width:960px) {
               body {font-size:16px}
               h1 {font-size:1.6em}
               .tab.hamburger{display:none}
               .header-container{display:flex;align-items:center;justify-content:space-between}
+              .header-container .logo img{display:block;width:93px;height:47px;margin-left:20px;cursor:pointer}
               .main-nav{display:block}
               .main-nav ul{display:flex;align-items:center}
               .main-nav li{margin:0 25px}
@@ -86,6 +89,9 @@ export default class MyDocument extends Document {
               .footer-info {display:flex;justify-content:space-between;align-items:center;margin-bottom:55px}
               .contact h1 {font-size:32px;font-weight:bold}
               .contact p {font-size:20px;color:#464646}
+              .coc .coc-language{margin-left:13px;font-size:17px}
+              .coc .coc-language a{margin-right:6px;}
+              .coc .coc-language a:hover{color:#00796b;text-decoration:underline}
             }
             `}} />
           <script async src='https://cdn.ampproject.org/v0.js' />
