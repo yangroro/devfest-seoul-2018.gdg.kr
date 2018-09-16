@@ -7,7 +7,7 @@ export default class Place extends Component {
         <h1 className="blind">Place</h1>
         <div className="place-info">
           <amp-iframe width="320" 
-            height="182" 
+            height="150" 
             frameborder="0" 
             sandbox="allow-scripts allow-same-origin"
             layout="responsive"
