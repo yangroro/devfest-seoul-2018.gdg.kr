@@ -8,7 +8,7 @@ export default class CoC extends Component {
           Code of Conduct
         </h1>
         <section className="coc-section">
-          <div className="coc-lang">한국어</div>
+          <div className="coc-language">한국어</div>
           <p>DevFest Seoul 2018 은 개발자 지향 콘퍼런스로서 권리 침해 없는 행사를 위하여 타인에게 불쾌감을 줄 수 있는 성 정체성, 성적 취향, 장애, 외모, 민족, 국적, 인종, 나이, 정치, 종교 등에 대한 발언은 금지합니다.</p>
           <p>행동강령은 Google Developers Group 행사에 참여하는 모든 개인에게 해당하며 위반 시 퇴장 등의 제재를 받을 수 있습니다. 행동강령 위반 사례에 대한 내용은 공개될 수 있습니다. </p>
           <section>
@@ -36,7 +36,7 @@ export default class CoC extends Component {
         </section>
 
         <section className="coc-section">
-          <div className="coc-lang">English</div>
+          <div className="coc-language">English</div>
           <p>GDG DevFest Seoul 2018 is a Developer-oriented event. To provide you with an event without infringement of rights, any statements that may offend others regarding gender identity, sexual orientation, disabilities, neurodiversity, physical appearance, body size, ethnicity, nationality, race, age, religion, or other protected category are prohibited.</p>
           <p>This Code of Conduct must be followed by every single person who attends events of the Google Developers Group. Any attempt to violate this guideline may result in sanctions such as members being removed. Cases of violation may be disclosed to the public.</p>
           <section>
@@ -59,7 +59,7 @@ export default class CoC extends Component {
             <h1>5. Feel free to reach out for help.</h1>
             <p>If you encounter a difficult situation, ask for help around you. If you have been asked for help, don’t hesitate to help.</p>
           </section>
-          <p>For a healthy community, you must abide by our Code of Conduct. If you are warned for violating any rules, you are expected to comply immediately. If not, you may be expelled from the meetup; if in a paid conference, with no refund. Also, you should have zero tolerance for any kind of behavior that makes you or any other person uncomfortable, and if any kind of harassment is seen or heard , should notify us via <a href="mailto:gdg.korea+coc@gmail.com">gdg.korea+coc@gmail.com</a> instantly. Organizers will take immediate action.</p>
+          <p>For a healthy community, you must abide by our Code of Conduct. If you are warned for violating any rules, you are expected to comply immediately. If not, you may be expelled from the meetup; if in a paid conference, with no refund. Also, you should have zero tolerance for any kind of behavior that makes you or any other person uncomfortable, and if any kind of harassment is seen or heard , should notify us via <a className="coc-mail" href="mailto:gdg.korea+coc@gmail.com">gdg.korea+coc@gmail.com</a> instantly. Organizers will take immediate action.</p>
           <p>We, organizers are accountable for being ready anytime if help is needed and making sure the participants are safe. This means that we will protect participants directly on the spot and contact any law enforcement if necessary.</p>
         </section>
       </section>

@@ -67,9 +67,9 @@ export default class MyDocument extends Document {
             .contact h1 {font-size:20px}
             .contact p {font-weight:300}
             .coc p {margin:15px 0}
-            .coc .coc-mail {color: #00796b;text-decoration: underline}
-            .coc-section {margin-top: 22px;margin-bottom:40px;}
-            .coc-section .coc-lang {display:inline-block;background-color:#00796b;color:#ffffff;font-size:1.6em;padding:5px 8px;}
+            .coc .coc-section {margin-top: 22px;margin-bottom:40px;}
+            .coc-section .coc-language {display:inline-block;background-color:#00796b;color:#ffffff;font-size:1.6em;padding:5px 8px;}
+            .coc-section .coc-mail {color: #00796b;text-decoration: underline}
             @media(min-width:960px) {
               body {font-size:16px}
               h1 {font-size:1.6em}
@@ -99,8 +99,8 @@ export default class MyDocument extends Document {
               .footer-info {display:flex;justify-content:space-between;align-items:center;margin-bottom:55px}
               .contact h1 {font-size:32px;font-weight:bold}
               .contact p {font-size:20px;color:#464646}
-              .coc-section {margin-top: 35px;margin-bottom:65px;}
-              .coc-section .coc-lang{margin-bottom: 7px;}
+              .coc-section {margin-top:35px;margin-bottom:65px;}
+              .coc-section .coc-language{margin-bottom:7px;}
             }
             `}} />
           <script async src='https://cdn.ampproject.org/v0.js' />
