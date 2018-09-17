@@ -10,6 +10,7 @@ export default class MyDocument extends Document {
     return (
       <html amp=''>
         <Head>
+          <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon.ico" />
           <link rel='canonical' href='https://devfest-seoul18.gdg.kr/' />
           <meta property="og:title" content="GDG DevFest Seoul 2018" />
           <meta property="og:type" content="website" />
