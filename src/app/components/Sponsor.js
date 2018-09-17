@@ -10,7 +10,7 @@ export default class Sponsor extends Component {
         <p>자세한 내용은 아래 신청폼을 통해 문의주세요.</p>
         <div className="link-set">
           <a href="mailto:devfest-seoul-2018@googlegroups.com" className="link">이메일 문의하기</a>
-          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVf1gYkLF3LVnZc5U8cpapBiIWMMqxiVpEXH9Sx4pB_Sgz6A/viewform" target="blank" className="link">신청 폼 작성하기</a>
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfVf1gYkLF3LVnZc5U8cpapBiIWMMqxiVpEXH9Sx4pB_Sgz6A/viewform" target="_blank" className="link">신청 폼 작성하기</a>
         </div>
       </section>
     )
