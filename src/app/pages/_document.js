@@ -38,6 +38,8 @@ export default class MyDocument extends Document {
             .side-nav a{display:block;padding:11px 12px;font-size:20px;color:#6f6f6f}
             .hero{position:relative;padding-top:137.5%;max-height:897px;background:url('/static/app@2x.jpg') center center no-repeat;background-size:cover;box-sizing:border-box}
             .hero h1 {}
+            .event-info{position:absolute;color:#f7f0e5;-webkit-text-stroke: 0.3px #1f1f1f;font-weight:900;margin-top: 14px;font-size: 1.3em;text-align: center;margin-left: auto;margin-right: auto;left: 0;right: 0;}
+            .event-info div{text-shadow: 1px 1px 2px rgb(53, 20, 2);}
             .hero-contents{position:absolute;left:0;right:0;top:55%;transform:translate(0, -50%)}
             .hero-contents h1 {width:84.6875%;max-width:799px;margin:auto}
             .hero-contents::after{content:'';display:block;width:100%;padding-top:54.875%;background:url(/static/hero-camp@m.png) 0 0 no-repeat;background-size:cover;}
@@ -87,6 +89,7 @@ export default class MyDocument extends Document {
               .main-nav .home{display:none}
               .hero {background-image:url(/static/hero-bg.jpg)}
               .hero-contents::after {width:1117px;height:363px;padding:0;background-image:url(/static/hero-camp.png);margin:auto}
+              .event-info{margin-top: 3px;font-size: 1.6em;}
               .info {display:flex;width:940px;margin:auto}
               .info .section {width:456px}
               .info .section + .section {margin-left:24px}
