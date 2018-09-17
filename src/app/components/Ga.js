@@ -7,14 +7,14 @@ export default class Ga extends Component {
         <script type="application/json">{`
           {
             "vars": {
-            "account": "UA-114028926-1"
-          },
+              "account": "UA-114028926-1"
+            },
             "triggers": {
-            "trackPageview": {
-            "on": "visible",
-            "request": "pageview"
-          }
-          }
+              "trackPageview": {
+                "on": "visible",
+                "request": "pageview"
+              }
+            }
           }
         `}</script>
       </amp-analytics>
