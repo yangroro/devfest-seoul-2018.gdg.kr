@@ -13,7 +13,7 @@ export default class Header extends Component {
               <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="#fff"/>
             </svg>
           </button>
-          <h1 className="logo"><a href="/"><amp-img src="static/devfest18-logo@3x.png" width="279px" height="141px" layout="responsive" />/></a></h1>
+          <h1 className="logo"><a href="/"><amp-img src="static/devfest18-logo@3x.png" width="279px" height="141px" layout="responsive" /></a></h1>
           <Nav className="main-nav"/>
         </div>
       </header>
