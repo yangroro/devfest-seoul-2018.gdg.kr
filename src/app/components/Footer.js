@@ -11,7 +11,7 @@ export default class Footer extends Component {
               <p><a href="mailto:devfest-seoul-2018@googlegroups.com">devfest-seoul-2018@googlegroups.com</a></p>
             </div>
             <div className="logo">
-              <img src="/static/gdg-logo.png" />
+              <amp-img src="/static/gdg-logo.png" width="1641px" height="298px" layout="responsive" />
             </div>
           </div>
           <p className="copyright">
