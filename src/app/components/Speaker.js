@@ -9,7 +9,7 @@ export default class Sponsor extends Component {
         <p>발표자 지원은 하단의 신청 폼을 통해 지원하실 수 있습니다. </p>
         <div className="link-set">
           <a href="mailto:devfest-seoul-2018@googlegroups.com" className="link">이메일 문의하기</a>
-          <a href="https://goo.gl/forms/M3QlGamaRQIXAqc23" target="blank" className="link">신청 폼 작성하기</a>
+          <a href="https://goo.gl/forms/M3QlGamaRQIXAqc23" target="_blank" className="link">신청 폼 작성하기</a>
         </div>
       </section>
     )
