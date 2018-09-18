@@ -13,7 +13,7 @@ export default class SideNav extends Component {
           {/* <li><a href="#">Speakers</a></li>
           <li><a href="#">Session</a></li> */}
           <li><Link href="/code_of_conduct"><a>Code of Conduct</a></Link></li>
-          <li><a href="#">신청하기</a></li>
+          <li><a href="https://festa.io/events/88" target="_blank">신청하기</a></li>
         </ul>
       </nav>
     )
