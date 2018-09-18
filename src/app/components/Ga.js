@@ -8,7 +8,7 @@ export default class Ga extends Component {
           __html: `
             {
               "vars": {
-                "account": "UA-114028926-1"
+                "account": "UA-125825521-1"
               },
               "triggers": {
                 "trackPageview": {
