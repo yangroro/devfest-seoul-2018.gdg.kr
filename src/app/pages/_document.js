@@ -14,7 +14,7 @@ export default class MyDocument extends Document {
           <link rel='canonical' href='https://devfest-seoul18.gdg.kr/' />
           <meta property="og:title" content="GDG DevFest Seoul 2018" />
           <meta property="og:type" content="website" />
-          <meta property="og:image" content="https://devfest-seoul18.gdg.kr/static/facebook.png" />
+          <meta property="og:image" content="https://devfest-seoul18.gdg.kr/static/facebook.jpg" />
           <meta property="og:url" content="https://devfest-seoul18.gdg.kr/" />
           <meta property="og:description" content="GDG 행사 중 가장 큰 개발자 축제인 DevFest Seoul 2018이 11월 10일 토요일 세종대학교 컨벤션센터에서 열립니다!" />
           <meta property="og:site_name" content="GDG DevFest Seoul 2018" />
