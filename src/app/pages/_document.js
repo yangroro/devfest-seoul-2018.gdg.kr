@@ -31,9 +31,9 @@ export default class MyDocument extends Document {
             .header{position:fixed;top:0;left:0;right:0;padding:16px;background:#00796b;box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.5);z-index:1000}
             .header h1{font-size:20px;font-weight:500;color:rgba(255,255,255,0.87);letter-spacing:-.3px}
             .header-container{display:flex;align-items:center;}
-            .header-container .logo img{display:none}
             .tab.hamburger{display:block;padding:0;margin:0;margin-right:23px}
             .main-nav{display:none}
+            .logo {display:none}
             amp-sidebar{width:84.375%;background:white;padding:35px 0;}
             .side-nav a{display:block;padding:11px 12px;font-size:20px;color:#6f6f6f}
             .hero{position:relative;padding-top:137.5%;max-height:897px;background:url('/static/app@2x.jpg') center center no-repeat;background-size:cover;box-sizing:border-box}
@@ -80,13 +80,14 @@ export default class MyDocument extends Document {
               .tab.hamburger{display:none}
               .header{padding:21px 30px;}
               .header-container{display:flex;align-items:center;justify-content:space-between}
-              .header-container .logo img{display:block;width:83px;height:42px;margin-left:20px;cursor:pointer;position:absolute;top:12px;}
               .main-nav{display:block;font-size:1.1em}
               .main-nav ul{display:flex;align-items:center}
               .main-nav li{margin:0 25px}
               .main-nav a{color:white}
               .main-nav a:hover{border-bottom:2px solid #ffffff;padding-bottom: 5px;}
               .main-nav .home{display:none}
+              .logo {display:block;width:93px;margin-left:25px}
+              .logo a {display:block;}
               .hero {background-image:url(/static/hero-bg.jpg)}
               .hero-contents::after {width:1117px;height:363px;padding:0;background-image:url(/static/hero-camp.png);margin:auto}
               .event-info{margin-top: 3px;font-size: 1.6em;}
