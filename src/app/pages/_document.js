@@ -38,8 +38,8 @@ export default class MyDocument extends Document {
             .side-nav a{display:block;padding:11px 12px;font-size:20px;color:#6f6f6f}
             .hero{position:relative;padding-top:137.5%;max-height:897px;background:url('/static/app@2x.jpg') center center no-repeat;background-size:cover;box-sizing:border-box}
             .hero h1 {}
-            .event-info{position:absolute;color:#f7f0e5;-webkit-text-stroke: 0.3px #1f1f1f;font-weight:900;margin-top: 14px;font-size: 1.3em;text-align: center;margin-left: auto;margin-right: auto;left: 0;right: 0;}
-            .event-info div{text-shadow: 1px 1px 2px rgb(53, 20, 2);}
+            .event-info{position:absolute;left:35px;right:35px;color:#f7f0e5;-webkit-text-stroke: 0.3px #1f1f1f;font-weight:900;margin-top: 14px;font-size: 1.3em;text-align:center;opacity:0.65}
+            .event-info span{display:inline-block;text-shadow: 1px 1px 2px rgb(53, 20, 2);}
             .hero-contents{position:absolute;left:0;right:0;top:55%;transform:translate(0, -50%)}
             .hero-contents h1 {width:84.6875%;max-width:799px;margin:auto}
             .hero-contents::after{content:'';display:block;width:100%;padding-top:54.875%;background:url(/static/hero-camp@m.png) 0 0 no-repeat;background-size:cover;}

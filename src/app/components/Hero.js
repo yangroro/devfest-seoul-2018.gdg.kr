@@ -14,8 +14,8 @@ export default class SideNav extends Component {
               ></amp-img>
           </h1>
           <div className="event-info">
-            <div className="date">2018.11.10 SAT</div>
-            <div className="venue">세종대학교 광개토관 컨벤션홀</div>
+            <span className="date">2018.11.10 SAT</span>
+            <span className="venue">세종대학교 광개토관 컨벤션홀</span>
           </div>
         </div>
       </div>
