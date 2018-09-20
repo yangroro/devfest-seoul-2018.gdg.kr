@@ -12,6 +12,7 @@ export default class MyDocument extends Document {
         <Head>
           <link rel="icon" type="image/png" sizes="16x16" href="/static/favicon.ico" />
           <link rel='canonical' href='https://devfest-seoul18.gdg.kr/' />
+          <meta property="fb:app_id" content="2130873263796316" />
           <meta property="og:title" content="GDG DevFest Seoul 2018" />
           <meta property="og:type" content="website" />
           <meta property="og:image" content="https://devfest-seoul18.gdg.kr/static/facebook.jpg" />
