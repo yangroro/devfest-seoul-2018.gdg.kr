@@ -108,21 +108,25 @@ injectGlobal`
               .coc-section .coc-language{margin-bottom:7px;}
               .coc-section section{margin:26px 0;}
               .schedule-container {}
-              .section-header {padding:230px 0 132px;text-align:center;background:#f9f9f9}
+              .section-header {padding:230px 0 132px;text-align:center;background:url('/static/devfest-camp@2x.png') center center no-repeat;background-size:cover;background-color:#f9f9f9}
               .section-header h1 {font-size:42px;font-weight:bold;color:#012552}
-              .schedule-list-container {max-width:1030px;margin:29px auto}
+              .schedule-list-container {max-width:1200px;margin:60px auto}
               .schedule-container .schedule-row {display:flex;margin:16px 0}
               .schedule-container .schedule-time {font-size:17px;color:#3f3f3f;line-height:1;text-align:center}
               .schedule-container .schedule-time-start {display:block}
               .schedule-container .schedule-time-start::after {content:'-';display:block}
               .schedule-container .schedule-item-row {display:flex;flex:1;margin-left:40px}
-              .schedule-container .schedule-item {flex:1;padding:13px 13px 30px;border:1px solid #d8d8d8;border-radius:15px;font-size:14px;font-weight:500;color:#464646}
+              .schedule-container .schedule-item {position:relative;flex:1;padding:13px 13px 30px;border:1px solid #d8d8d8;border-radius:15px;font-size:14px;font-weight:500;color:#464646;height:205px;}
+              .schedule-container .schedule-row:nth-of-type(-n+2) .schedule-item { height: 60px;padding: 18px 0 18px 76px;}
               .schedule-container .schedule-item-meta {display:flex;justify-content:space-between;margin-bottom:12px}
-              .schedule-container .schedule-item .schedule-item-title {font-size:22px}
-              .schedule-container .schedule-item .schedule-item-speaker {display:flex;justify-content:space-between}
-              .schedule-container .schedule-item .schedule-item-speaker-thumb {width:35px}
-              .schedule-container .schedule-item-info {margin:16px 0;max-height:54px;overflow:hidden}
+              .schedule-container .schedule-item .schedule-item-title {font-size:20px}
+              .schedule-container .schedule-item .schedule-item-speaker {display:flex;justify-content:space-between;position: absolute; bottom: 20px;width:100%}
+              .schedule-container .schedule-item .schedule-item-speaker .schedule-item-speaker-name {padding-top:10px;}
+              .schedule-container .schedule-item .schedule-item-speaker-thumb {right: 27px; position: absolute;}
+              .schedule-container .schedule-item .schedule-item-speaker-thumb .speaker-thumb-image {display: inline-block;margin-right:2px;}
+              .schedule-container .schedule-item-info {margin:12px 0;max-height:54px;overflow:hidden;color: #b9b9b9;font-weight: 400;}
               .schedule-container .schedule-item + .schedule-item {margin-left:18px}
+              .schedule-container .schedule-item + .merged-cell {height:60px;}
             }
 `
 

@@ -10,15 +10,27 @@ class SessionList extends Component {
       return (
         <section className="schedule-item" lang={session.lang}>
           <div className="schedule-item-meta">
-            <div className="schedule-item-category">{session.categories.join(" ")}</div>
+            <div className="schedule-item-category">{session.category}</div>
             <div className="schedule-item-language">{session.lang}</div>
           </div>
           <h1 className="schedule-item-title">{session.title}</h1>
-          <div className="schedule-item-info">{session.description}</div>
+          <div className="schedule-item-info">{session.sub_title}</div>
           <div className="schedule-item-speaker">
-            <div className="schedule-item-speaker-name">{session.speaker.name}</div>
+            <div className="schedule-item-speaker-name">{session.speaker.map((data) => data.name).join('/')}</div>
             <div className="schedule-item-speaker-thumb">
-              <amp-img src={session.speaker.thumb} width="35px" height="35px" layout="responsive"></amp-img>
+              {
+                session.speaker.map((data) => {
+                  return <div className = 'speaker-thumb-image' 
+                          style = {{ backgroundImage: 'url(' + data.thumb + ')', 
+                              backgroundSize: 'cover', 
+                              backgroundPosition: 'center center',
+                              backgroundRepeat: 'no-repeat',
+                              width: '35px',
+                              height: '35px',
+                              borderRadius: '50%'
+                        }} />
+                })
+              }
             </div>
           </div>
         </section>
@@ -42,7 +54,6 @@ export default class Schedule extends Component {
     }
   }
   render() {
-
     let scheduleList = this.state.scheduleData.map((schedule) => {
       return (
         <div className="schedule-row">
