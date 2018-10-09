@@ -139,7 +139,7 @@ export default class MyDocument extends Document {
               .schedule-container .schedule-item .schedule-item-title {font-size:22px}
               .schedule-container .schedule-item .schedule-item-speaker {display:flex;justify-content:space-between}
               .schedule-container .schedule-item .schedule-item-speaker-thumb {width:35px}
-              .schedule-container .schedule-item-info {margin:16px 0}
+              .schedule-container .schedule-item-info {margin:16px 0;max-height:54px;overflow:hidden}
               .schedule-container .schedule-item + .schedule-item {margin-left:18px}
             }
             `}} />
