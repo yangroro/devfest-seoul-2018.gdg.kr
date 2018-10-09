@@ -1,0 +1,130 @@
+{
+  "schedules": [
+    {
+      "start_time": "12:00",
+      "end_time": "13:00",
+      "type": "only",
+      "sessionList": [
+        {
+          "track": "",
+          "hall": "A",
+          "title": "REGISTER",
+          "description": "",
+          "categories": [
+            ""
+          ],
+          "lang": "",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "bio": "",
+            "thumb": "",
+            "social": {
+              "facebook": "",
+              "twitter": "",
+              "instagram": ""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "start_time": "13:00",
+      "end_time": "13:15",
+      "type": "only",
+      "sessionList": [
+        {
+          "track": "",
+          "hall": "A",
+          "title": "KEYNOTE",
+          "description": "",
+          "categories": [
+            ""
+          ],
+          "lang": "",
+          "speaker": {
+            "name": "",
+            "info": "",
+            "bio": "",
+            "thumb": "",
+            "social": {
+              "facebook": "",
+              "twitter": "",
+              "instagram": ""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "start_time": "13:45",
+      "end_time": "14:25",
+      "type": "normal",
+      "sessionList": [
+        {
+          "track": "A",
+          "hall": "A",
+          "title": "Browsing modern TensorFlow",
+          "description": "이제 정식공개 3년을 향해 달려가는 TensorFlow는 다양한 분야에서 사용되고 있습니다. 프로그래밍 프레임워크로서는 딥러닝, 머신러닝부터 일반 과학 연산 분야까지, 응용 분야에서는 서버부터 모바일, 브라우저까지 아우르는 다양한 머신러닝 기반 어플리케이션 프레임워크로 자리잡고 있습니다. 하드웨어 플랫폼의 경우 모바일부터 Edge TPU, AMD GPU 까지 지속적으로 지원 플랫폼을 늘려 나가고 있습니다. 이 발표에서는 2018년 TensorFlow의 영토 확장 과정을 소프트웨어, 하드웨어 및 플랫폼 측면에서 돌아봅니다. 올해 TensorFlow의 발전 과정을 머신러닝 생태계의 변화 측면에서 이야기합니다. 또한 TensorFlow 2.0의 로드맵 소개와 함께, 향후 머신러닝 플랫폼의 변화에 대해서도 생각해봅니다.",
+          "categories": [
+            "ML"
+          ],
+          "lang": "ko",
+          "speaker": {
+            "name": "신정규",
+            "info": "Lablup",
+            "bio": "Founder of Lablup Inc. / Google Developers Experts (Machine Learning & Sprint Master) / Leader of TNF/Needlworks / Statistical physicist / opinion formation dynamics on complex systems / studying neuroscience and social systems. Huge advocate of open source.",
+            "thumb": "",
+            "social": {
+              "facebook": "",
+              "twitter": "",
+              "instagram": ""
+            }
+          }
+        },
+        {
+          "track": "B",
+          "hall": "B",
+          "title": "Flux, Redux, MVI 그리고 with MVP",
+          "description": "페이스북의 Flux로부터 Redux, 그리고 안드로이드에도 MVI가 등장했습니다. 다르지만 비슷해 보이는 3가지의 Data Uni-Directional Architecture (데이터 단방향 구조) Flux, Redux, MVI를 알아봅시다. 그리고 실무에서 가장 많이 사용한다는 MVP 구조에 간단하게 적용해봅시다.",
+          "categories": [
+            "Android"
+          ],
+          "lang": "ko",
+          "speaker": {
+            "name": "이승민",
+            "info": "GDE",
+            "bio": "2015년부터 드라마앤컴퍼니에서 안드로이드 개발자로 리멤버를 만들었습니다. 현재는 휴직 후 한동대학교 전산전자공학부 4학년 재학 중 입니다. 2019년 2월 졸업 예정 입니다.",
+            "thumb": "",
+            "social": {
+              "facebook": "",
+              "twitter": "",
+              "instagram": ""
+            }
+          }
+        },
+        {
+          "track": "C",
+          "hall": "C",
+          "title": "Chrome Devtools를 활용한 성능 측정과 개선",
+          "description": "Fast is good, and the faster the better\"\n'스마트어라운드'라는 서비스를 약 9개월 동안 개발을 했고 개발 과정 속에서 성능 개선한 부분을 공유하고자 합니다. Vanilla로 작성된 프로젝트이다보니 다른 라이브러리에 의존하지 않고 native 기능들을 사용하면서 알게 된 지식을 공유합니다. 다른 라이브러리 위에서 개발하시는 개발자 분들에게는 어떠한 원리로 동작하는지 알 수 있는 기회가 될 수 있을 것 같습니다.\nreference : https://github.com/JaeYeopHan/tip-archive/issues/28",
+          "categories": [
+            "Web"
+          ],
+          "lang": "ko",
+          "speaker": {
+            "name": "한재엽",
+            "info": "NAVER",
+            "bio": "현재 Naver FE플랫폼에서 프론트엔드 엔지니어로 재직 중인 한재엽입니다.",
+            "thumb": "",
+            "social": {
+              "facebook": "",
+              "twitter": "",
+              "instagram": ""
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

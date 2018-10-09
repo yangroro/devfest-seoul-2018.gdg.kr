@@ -4,8 +4,8 @@ import GDG from '../components/GDG';
 import DevFest from '../components/DevFest';
 import Hero from '../components/Hero';
 import Programs from '../components/Programs';
-import Sponsor from '../components/Sponsor';
-import Speaker from '../components/Speaker';
+import Camp from '../components/Camp';
+import ScheduleHome from '../components/ScheduleHome';
 
 export default () => (
   <div>
@@ -18,9 +18,11 @@ export default () => (
         <DevFest />
         <GDG />
       </div>
-      <Programs />
-      <Sponsor />
-      <Speaker />
+      <div className="home-session">
+        <Camp />
+        <ScheduleHome />
+        <Programs />
+      </div>
       <Place />
     </main>
   </div>
