@@ -12,7 +12,9 @@ injectGlobal`
             body{font-size:14px;line-height:1.4;font-family:"Roboto", sans-serif;color:#464646;word-break:keep-all}
             h1{font-size:1.6em;font-weight:600}
             button{padding:0;margin:0;border:0;background:none;-webkit-appearance:none}
-            .header{position:fixed;top:0;left:0;right:0;z-index:100;color:white}
+            .header{position:fixed;top:0;left:0;right:0;z-index:100;color:white;padding:21px 30px;background-color:#00796b;box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);}
+            .header-container{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between}
+            .header-container .logo{display:none;}
             .tab.hamburger{display:block;padding:0;margin:0;margin-right:23px}
             .main-nav{display:none}
             amp-sidebar{width:84.375%;background:white;padding:35px 0;}
@@ -41,7 +43,7 @@ injectGlobal`
             .program-hero section:nth-of-type(1) {background-color:#e2513a}
             .program-hero section:nth-of-type(2) {background-color:#fbbc05}
             .program-hero h1{font-size:32px;font-weight:bold;color:#012552;text-align:center;margin-bottom:42px}
-            .program-hero .btn-more{display:block;width:243px;font-size:22px;font-weight:500;color:#00796b;padding:15px 30px;margin:20px auto;background:#fff;border:2px solid #00796b;border-radius:15px;border-top-right-radius:0;box-sizing:border-box;text-align:center;}
+            .program-hero .btn-more{display:block;width:243px;font-size:22px;font-weight:500;color:#00796b;padding:15px 30px;margin:20px auto;background:#fff;border:1px solid #00796b;border-radius:15px;border-top-right-radius:0;box-sizing:border-box;text-align:center;}
             .place-info {position:relative}
             .place-info .place-card {margin:20px 20px 39px 20px;background:white;box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.5);padding-bottom:0.1px}
             .place-info .place-card h1 {padding:119px 15px 5px;background-image:url(/static/venue.jpg);background-size:cover;background-position:center;color:white;font-size:20px;text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);}
@@ -58,12 +60,32 @@ injectGlobal`
             .coc .coc-section {margin-top: 25px;margin-bottom:40px;}
             .coc-section .coc-language {display:inline-block;background-color:#00796b;color:#ffffff;font-size:1.2em;padding:5px 11px;}
             .coc-section .coc-mail {color: #00796b;text-decoration: underline}
+
+            .schedule-list-container {max-width:960px;margin:20px 30px}
+            .section-header {padding:58px 0 58px;text-align:center;background:url('/static/devfest-camp@2x.png') center center no-repeat;background-size:cover;background-color:#f9f9f9}
+            .schedule-container {margin-top:74px;}
+            .schedule-container .schedule-row {display:flex;margin:16px 0}
+            .schedule-container .schedule-time {font-size:12px;color:#3f3f3f;line-height:1;text-align:center}
+            .schedule-container .schedule-time-start {display:block}
+            .schedule-container .schedule-time-start::after {content:'-';display:block}
+            .schedule-container .schedule-item-row {flex:1;margin-left:20px;margin-top:-3px;}
+            .schedule-container .schedule-item {position:relative;flex:1;padding:12px 13px 12px 13px;border:1px solid #d8d8d8;border-radius:15px;font-size:14px;font-weight:500;color:#464646;height:40px;display: flex;justify-content: center;flex-direction: column;margin-bottom:5px}
+            .schedule-container .schedule-item-meta {display:none}
+            .schedule-container .schedule-item .schedule-item-title {font-size:14px}
+            .schedule-container .schedule-item-info {display:none;}
+            .schedule-container .schedule-item + .merged-cell {height:60px;}
+            .schedule-container .schedule-item .schedule-item-speaker {display:none}
+            .schedule-container .schedule-item .schedule-item-speaker-thumb {display:none}
+            .menu-select-button {text-align: center;margin-top: 22px;padding-bottom: 10px;}
+            .menu-button {background-color: #ffffff;border: 1px solid #e0e0e4;font-size: 13px;margin-right: 6px;padding: 11px 16px 11px 16px;border-radius: 21px;cursor:pointer}
+            .menu-button:hover {background-color:#e0e0e4;}
             @media(min-width:960px) {
               body {font-size:16px}
               h1 {font-size:1.6em}
               .tab.hamburger{display:none}
               .header{padding:21px 30px;background-color:#00796b;box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);}
               .header-container{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between}
+              .header-container .register{display:none}
               .main-nav{display:flex;flex:1;font-size:22px;line-height:1}
               .main-nav ul{display:flex;flex:1;align-items:center;justify-content:space-around;padding:0 30px}
               .main-nav li{margin:0 25px}
@@ -107,7 +129,7 @@ injectGlobal`
               .coc .coc-section {margin-top:35px;margin-bottom:65px;}
               .coc-section .coc-language{margin-bottom:7px;}
               .coc-section section{margin:26px 0;}
-              .schedule-container {}
+              .schedule-container {margin-top:0;}
               .section-header {padding:230px 0 132px;text-align:center;background:url('/static/devfest-camp@2x.png') center center no-repeat;background-size:cover;background-color:#f9f9f9}
               .section-header h1 {font-size:42px;font-weight:bold;color:#012552}
               .schedule-list-container {max-width:1200px;margin:60px auto}
@@ -116,17 +138,20 @@ injectGlobal`
               .schedule-container .schedule-time-start {display:block}
               .schedule-container .schedule-time-start::after {content:'-';display:block}
               .schedule-container .schedule-item-row {display:flex;flex:1;margin-left:40px}
-              .schedule-container .schedule-item {position:relative;flex:1;padding:13px 13px 30px;border:1px solid #d8d8d8;border-radius:15px;font-size:14px;font-weight:500;color:#464646;height:205px;}
+              .schedule-container .schedule-item {display:block;position:relative;flex:1;padding:13px 13px 30px;border:1px solid #d8d8d8;border-radius:15px;font-size:14px;font-weight:500;color:#464646;height:205px;}
               .schedule-container .schedule-row:nth-of-type(-n+2) .schedule-item { height: 60px;padding: 18px 0 18px 76px;}
               .schedule-container .schedule-item-meta {display:flex;justify-content:space-between;margin-bottom:12px}
+              .schedule-container .schedule-item-meta .schedule-item-category {padding: 4px 8px;font-size: 11px;border-radius: 24px;color:#ffffff}
               .schedule-container .schedule-item .schedule-item-title {font-size:20px}
               .schedule-container .schedule-item .schedule-item-speaker {display:flex;justify-content:space-between;position: absolute; bottom: 20px;width:100%}
               .schedule-container .schedule-item .schedule-item-speaker .schedule-item-speaker-name {padding-top:10px;}
-              .schedule-container .schedule-item .schedule-item-speaker-thumb {right: 27px; position: absolute;}
+              .schedule-container .schedule-item .schedule-item-speaker-thumb {display:block;right: 27px; position: absolute;}
               .schedule-container .schedule-item .schedule-item-speaker-thumb .speaker-thumb-image {display: inline-block;margin-right:2px;}
-              .schedule-container .schedule-item-info {margin:12px 0;max-height:54px;overflow:hidden;color: #b9b9b9;font-weight: 400;}
+              .schedule-container .schedule-item-info {display:block;margin:12px 0;max-height:54px;overflow:hidden;color: #b9b9b9;font-weight: 400;}
               .schedule-container .schedule-item + .schedule-item {margin-left:18px}
               .schedule-container .schedule-item + .merged-cell {height:60px;}
+              .menu-select-button {margin-top:39px;padding-bottom:0px;}
+              .menu-button {font-size: 16px;margin-right: 14px;padding: 11px 16px 11px 16px;}
             }
 `
 

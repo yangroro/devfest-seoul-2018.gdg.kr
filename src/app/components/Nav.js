@@ -10,7 +10,7 @@ export default class SideNav extends Component {
       <nav className={this.props.className}>
         <ul>
           <li className="home"><a href="/">Home</a></li>
-          <li><Link href="/schedule"><a>SCHEDULE</a></Link></li>
+          <li><Link href="/timetable"><a>SCHEDULE</a></Link></li>
           <li><Link href="/team"><a>TEAM</a></Link></li>
           <li><Link href="/code_of_conduct"><a>Code of Conduct</a></Link></li>
         </ul>

@@ -1,11 +1,11 @@
 import Head from 'next/head';
-import Schedule from '../components/Schedule';
+import Timetable from '../components/Timetable';
 
 export default () => (
   <div>
     <Head>
       <title>DevFest Seoul 2018 - Schedule</title>
     </Head>
-    <Schedule />
+    <Timetable />
   </div>
 )

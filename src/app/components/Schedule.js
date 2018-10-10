@@ -10,7 +10,11 @@ class SessionList extends Component {
       return (
         <section className="schedule-item" lang={session.lang}>
           <div className="schedule-item-meta">
-            <div className="schedule-item-category">{session.category}</div>
+            {session.category === 'Mobile' ? <div className="schedule-item-category" style={{backgroundColor: '#8bc34a'}}>{session.category}</div> : ''}
+            {session.category === 'Web' ? <div className="schedule-item-category" style={{backgroundColor: '#43a6f5'}}>{session.category}</div> : ''}
+            {session.category === 'Cloud' ? <div className="schedule-item-category" style={{backgroundColor: '#3f51b5'}}>{session.category}</div> : ''}
+            {session.category === 'ML' ? <div className="schedule-item-category" style={{backgroundColor: '#fbbc05'}}>{session.category}</div> : ''}
+            {session.category === 'Assistant' ? <div className="schedule-item-category" style={{backgroundColor: '#e2513a'}}>{session.category}</div> : ''}
             <div className="schedule-item-language">{session.lang}</div>
           </div>
           <h1 className="schedule-item-title">{session.title}</h1>
@@ -20,9 +24,9 @@ class SessionList extends Component {
             <div className="schedule-item-speaker-thumb">
               {
                 session.speaker.map((data) => {
-                  return <div className = 'speaker-thumb-image' 
-                          style = {{ backgroundImage: 'url(' + data.thumb + ')', 
-                              backgroundSize: 'cover', 
+                  return <div className = 'speaker-thumb-image'
+                          style = {{ backgroundImage: 'url(' + data.thumb + ')',
+                              backgroundSize: 'cover',
                               backgroundPosition: 'center center',
                               backgroundRepeat: 'no-repeat',
                               width: '35px',
@@ -67,14 +71,9 @@ export default class Schedule extends Component {
     })
 
     return (
-      <section className="schedule-container">
-        <header className="section-header">
-          <h1>SCHEDULE</h1>
-        </header>
-        <div className="schedule-list-container">
-          {scheduleList}
-        </div>
-      </section>
+      <div className="schedule-list-container">
+        {scheduleList}
+      </div>
     )
   }
 }
