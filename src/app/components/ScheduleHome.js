@@ -49,7 +49,7 @@ export default class ScheduleHome extends Component {
             </div>
           </div>
         </div>
-        <a href="#" class="btn-more">전체 스케줄 보러가기</a>
+        <a href="/timetable" class="btn-more">전체 스케줄 보러가기</a>
       </div>
     )
   }

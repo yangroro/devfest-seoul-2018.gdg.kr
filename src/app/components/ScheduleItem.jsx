@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
-import Data from '../static/schedule.json'
-import { ModalProvider } from 'styled-react-modal'
 import styled from 'styled-components'
 import SpeakerModalWrapper from './Modal'
 
-const ScheduleItem = styled.section`
+const ScheduleItemWrapper = styled.section`
   height: 60px;
   padding: 18px 0 18px 76px;
   cursor: pointer;
@@ -16,7 +14,7 @@ const ScheduleItem = styled.section`
   }
 `
 
-class SessionItem extends Component {
+class ScheduleItem extends Component {
   state = {
     isOpen: false,
     opacity: 0,
@@ -42,13 +40,62 @@ class SessionItem extends Component {
   render() {
     const { session, startTime, endTime } = this.props
     return (
-      <ScheduleItem
+      <ScheduleItemWrapper
         onClick={this.toggleModal}
         className="schedule-item"
         lang={session.lang}
       >
         <div className="schedule-item-meta">
-          <div className="schedule-item-category">{session.category}</div>
+          {session.category === 'Mobile' ? (
+            <div
+              className="schedule-item-category"
+              style={{ backgroundColor: '#8bc34a' }}
+            >
+              {session.category}
+            </div>
+          ) : (
+            ''
+          )}
+          {session.category === 'Web' ? (
+            <div
+              className="schedule-item-category"
+              style={{ backgroundColor: '#43a6f5' }}
+            >
+              {session.category}
+            </div>
+          ) : (
+            ''
+          )}
+          {session.category === 'Cloud' ? (
+            <div
+              className="schedule-item-category"
+              style={{ backgroundColor: '#3f51b5' }}
+            >
+              {session.category}
+            </div>
+          ) : (
+            ''
+          )}
+          {session.category === 'ML' ? (
+            <div
+              className="schedule-item-category"
+              style={{ backgroundColor: '#fbbc05' }}
+            >
+              {session.category}
+            </div>
+          ) : (
+            ''
+          )}
+          {session.category === 'Assistant' ? (
+            <div
+              className="schedule-item-category"
+              style={{ backgroundColor: '#e2513a' }}
+            >
+              {session.category}
+            </div>
+          ) : (
+            ''
+          )}
           <div className="schedule-item-language">{session.lang}</div>
         </div>
         <h1 className="schedule-item-title">{session.title}</h1>
@@ -87,51 +134,9 @@ class SessionItem extends Component {
           startTime={startTime}
           endTime={endTime}
         />
-      </ScheduleItem>
+      </ScheduleItemWrapper>
     )
   }
 }
 
-const SessionRowList = ({ list, ...time }) => (
-  <ModalProvider>
-    <div className="schedule-item-row">
-      {list.map(session => <SessionItem {...time} session={session} />)}
-    </div>
-  </ModalProvider>
-)
-
-export default class Schedule extends Component {
-  constructor() {
-    super()
-
-    this.state = {
-      scheduleData: Data.schedules,
-    }
-  }
-  render() {
-    let scheduleList = this.state.scheduleData.map(schedule => {
-      return (
-        <div className="schedule-row">
-          <div className="schedule-time">
-            <span className="schedule-time-start">{schedule.start_time}</span>
-            <span className="schedule-item-end">{schedule.end_time}</span>
-          </div>
-          <SessionRowList
-            startTime={schedule.start_time}
-            endTime={schedule.end_time}
-            list={schedule.sessionList}
-          />
-        </div>
-      )
-    })
-
-    return (
-      <section className="schedule-container">
-        <header className="section-header">
-          <h1>SCHEDULE</h1>
-        </header>
-        <div className="schedule-list-container">{scheduleList}</div>
-      </section>
-    )
-  }
-}
+export default ScheduleItem
