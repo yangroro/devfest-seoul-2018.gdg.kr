@@ -1,7 +1,4 @@
 import Document, { Head, NextScript, Main } from 'next/document'
-import SideNav from '../components/SideNav'
-import Header from '../components/Header'
-import Footer from '../components/Footer'
 import Ga from '../components/Ga'
 import { ServerStyleSheet, injectGlobal } from 'styled-components'
 
@@ -12,7 +9,7 @@ injectGlobal`
             body{font-size:14px;line-height:1.4;font-family:"Roboto", sans-serif;color:#464646;word-break:keep-all}
             h1{font-size:1.6em;font-weight:600}
             button{padding:0;margin:0;border:0;background:none;-webkit-appearance:none}
-            .header{position:fixed;top:0;left:0;right:0;z-index:100;color:white;padding:21px 30px;background-color:#00796b;box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);}
+            /* .header{position:fixed;top:0;left:0;right:0;z-index:100;color:white;padding:21px 30px;background-color:#00796b;box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);} */
             .header-container{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between}
             .header-container .logo{display:none;}
             .tab.hamburger{display:block;padding:0;margin:0;margin-right:23px}
@@ -83,10 +80,10 @@ injectGlobal`
               body {font-size:16px}
               h1 {font-size:1.6em}
               .tab.hamburger{display:none}
-              .header{padding:21px 30px;background-color:#00796b;box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);}
+              /* .header{padding:21px 30px;background-color:#00796b;box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);} */
               .header-container{max-width:1200px;margin:auto;display:flex;align-items:center;justify-content:space-between}
               .header-container .register{display:none}
-              .main-nav{display:flex;flex:1;font-size:22px;line-height:1}
+              .main-nav{display:flex;flex:1;line-height:1}
               .main-nav ul{display:flex;flex:1;align-items:center;justify-content:space-around;padding:0 30px}
               .main-nav li{margin:0 25px}
               .main-nav a{color:white}
@@ -162,7 +159,7 @@ export default class MyDocument extends Document {
       sheet.collectStyles(<App {...props} />),
     )
     const styleTags = sheet.getStyleElement()
-    return { ...page, styleTags } // return styles collected
+    return { ...page, styleTags }
   }
 
   render() {
@@ -228,10 +225,6 @@ export default class MyDocument extends Document {
           <Main />
           <NextScript />
           <Ga />
-          <Header />
-          <SideNav />
-          {/* <div id="__next" dangerouslySetInnerHTML={{ __html: html }} /> */}
-          <Footer />
         </body>
       </html>
     )

@@ -143,7 +143,7 @@ const SpeakerImgBox = styled.div`
 
 const ModalSpeakerImg = styled.div`
   position: absolute;
-  margin-top: -65px;
+  margin-top: ${p => (p.second ? '5px' : '-65px')};
   background-image: url(${p => p.url});
   background-size: cover;
   background-position: center center;
@@ -240,7 +240,8 @@ const SpeakerModalWrapper = ({
         <ModalSpeakerImg url={session.speaker[0].thumb} />
         {session.speaker[1] && (
           <ModalSpeakerImg
-            style={{ marginTop: '5px' }}
+            second
+            // style={{ marginTop: '5px' }}
             url={session.speaker[1].thumb}
           />
         )}
