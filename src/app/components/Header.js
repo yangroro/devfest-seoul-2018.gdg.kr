@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Nav from './Nav'
 import Link from 'next/link'
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { ON_MOBILE } from '../constants'
 
 const HeaderWrapper = styled.div`
@@ -10,17 +10,21 @@ const HeaderWrapper = styled.div`
   left: 0;
   right: 0;
   z-index: 100;
-  color: white;
-  padding: 10px 30px;
-  background-color: #00796b;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  color: rgba(0, 121, 107, 1);
+  padding: 20px 30px;
+  transition: all 0.3s ease;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  background-color: transparent;
   font-size: 20px;
 
   ${p =>
     p.sticky &&
     css`
+      color: white;
       padding: 10px 30px;
-      background-color: rgba(0, 121, 107, 0.1);
+      background-color: rgba(0, 121, 107, 1);
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
     `};
 `
 

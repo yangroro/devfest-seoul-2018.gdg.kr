@@ -86,7 +86,6 @@ injectGlobal`
               .main-nav{display:flex;flex:1;line-height:1}
               .main-nav ul{display:flex;flex:1;align-items:center;justify-content:space-around;padding:0 30px}
               .main-nav li{margin:0 25px}
-              .main-nav a{color:white}
               .btn-apply {padding:18px 26px 16px;background-color:#00796b;border-radius:15px;border-top-right-radius:0;border:2px solid #fff}
               .logo {display:block;font-size:36px;}
               .logo a {display:block;}

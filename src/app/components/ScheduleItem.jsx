@@ -9,8 +9,12 @@ const ScheduleItemWrapper = styled.section`
   transition: 0.2s ease, color 0.2s ease;
   &:hover,
   :focus {
+    background-color: #e0e0e4;
+    box-shadow: 0 0 20px 0 #e0e0e4, 0 0 20px 0 #e0e0e4;
+  }
+
+  &:active {
     background-color: #d8d8d8;
-    box-shadow: 0 0 20px 0 #d8d8d8, 0 0 20px 0 #d8d8d8;
   }
 `
 

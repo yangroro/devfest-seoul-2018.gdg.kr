@@ -4,7 +4,7 @@ import SideNav from '../components/SideNav'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
 
-export default class MyApp extends App {
+class MyApp extends App {
   static async getInitialProps({ Component, ctx }) {
     let pageProps = {}
 
@@ -28,3 +28,5 @@ export default class MyApp extends App {
     )
   }
 }
+
+export default MyApp

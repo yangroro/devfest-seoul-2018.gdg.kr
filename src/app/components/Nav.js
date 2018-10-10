@@ -25,7 +25,11 @@ class Navigation extends Component {
             </Link>
           </li>
         </ul>
-        <a href="https://festa.io/events/88" target="_blank" class="btn-apply">
+        <a
+          href="https://festa.io/events/88"
+          target="_blank"
+          className="btn-apply"
+        >
           신청하기
         </a>
       </nav>
