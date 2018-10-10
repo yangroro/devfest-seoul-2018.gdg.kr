@@ -1,4 +1,4 @@
-import Document, { Head } from 'next/document'
+import Document, { Head, NextScript, Main } from 'next/document'
 import SideNav from '../components/SideNav'
 import Header from '../components/Header'
 import Footer from '../components/Footer'
@@ -200,10 +200,12 @@ export default class MyDocument extends Document {
           />
         </Head>
         <body>
+          <Main />
+          <NextScript />
           <Ga />
           <Header />
           <SideNav />
-          <div id="__next" dangerouslySetInnerHTML={{ __html: html }} />
+          {/* <div id="__next" dangerouslySetInnerHTML={{ __html: html }} /> */}
           <Footer />
         </body>
       </html>
