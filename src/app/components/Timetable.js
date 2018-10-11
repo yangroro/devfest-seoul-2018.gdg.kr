@@ -19,7 +19,7 @@ export default class Timetable extends Component {
             <h1>SCHEDULE</h1>
           </header>
           <div className="menu-select-button">
-            <button className="menu-button" onClick={() => this.changeCurrentPage('main_session')}>MAIN SESSION</button> {/* TODO: props 줘서 버튼 동작시키기 */}
+            <button className="menu-button" onClick={() => this.changeCurrentPage('main_session')}>MAIN SESSION</button>
             <button className="menu-button" onClick={() => this.changeCurrentPage('special_session')}>CODELAB / MEDITATION</button>
           </div>
           {this.state.currentPage === 'main_session'
