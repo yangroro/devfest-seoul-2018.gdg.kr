@@ -48,7 +48,7 @@ injectGlobal`
             .program-hero h1{font-size:32px;font-weight:bold;color:#012552;text-align:center;margin-bottom:42px}
             .program-hero .btn-more{display:block;width:243px;font-size:22px;font-weight:500;color:#00796b;padding:15px 30px;margin:20px auto;background:#fff;border:1px solid #00796b;border-radius:15px;border-top-right-radius:0;box-sizing:border-box;text-align:center;}
             .place-info {position:relative}
-            .place-info .place-card {margin:20px 20px 39px 20px;background:white;box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.5);padding-bottom:0.1px}
+            .place-info .place-card {position:absolute; top:0;margin:20px 20px 39px 20px;background:white;box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.5);padding-bottom:0.1px}
             .place-info .place-card h1 {padding:119px 15px 5px;background-image:url(/static/venue.jpg);background-size:cover;background-position:center;color:white;font-size:20px;text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);}
             .place-info .place-card p {font-weight:300;margin:12px 15px}
             .footer {background-color:#f5f5f5;padding:20px;color:#464646;}
@@ -121,10 +121,10 @@ injectGlobal`
               .program-hero-container {display:flex;flex-wrap:wrap;width:940px;margin:0px auto}
               .program-hero section {width:460px;margin:0}
               .program-hero section:nth-of-type(2n) {margin-left:18px}
-              .place-card {position:absolute;right:132px;top:52px;width:456px;height:457px}
+              .place-info .place-card {position:absolute;right:132px;top:52px;width:456px;height:457px}
               .place-info .place-card h1 {padding:175px 25px 24px}
               .place-info .place-card p {margin:18px 25px}
-              .footer {margin-top:96px;padding-top:78px;padding-bottom:57px}
+              .footer {margin-top:0px;padding-top:78px;padding-bottom:57px}
               .footer-container img {width:215px}
               .footer-info {display:flex;justify-content:space-between;align-items:center;margin-bottom:55px}
               .contact h1 {font-size:32px;font-weight:bold}
