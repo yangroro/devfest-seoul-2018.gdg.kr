@@ -92,10 +92,7 @@ export default class Header extends Component {
   }
 
   render() {
-<<<<<<< HEAD
-=======
     // console.log(currentLocation)
->>>>>>> 73dd90b1f9976d78c524286f468ec9bf5c0603f1
     return (
       <NavConsumer>
         {({ state }) => (
