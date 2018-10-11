@@ -54,7 +54,6 @@ export default class Header extends Component {
   }
 
   render() {
-    console.log(this.state.isSticky)
     return (
       <HeaderWrapper sticky={this.state.isSticky} className="header">
         <div className="header-container">
