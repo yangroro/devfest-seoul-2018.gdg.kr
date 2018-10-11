@@ -80,7 +80,7 @@ injectGlobal`
             .schedule-container .schedule-item .schedule-item-speaker {display:none}
             .schedule-container .schedule-item .schedule-item-speaker-thumb {display:none}
             .menu-select-button {text-align: center;margin-top: 22px;padding-bottom: 10px;}
-            .menu-button {background-color: #ffffff;border: 1px solid #e0e0e4;font-size: 13px;margin-right: 6px;padding: 11px 16px 11px 16px;border-radius: 21px;cursor:pointer}
+            .menu-button {color: #464646;background-color: #ffffff;border: 1px solid #e0e0e4;font-size: 12px;margin-right: 6px;padding: 11px 14px 11px 14px;border-radius: 21px;cursor:pointer}
             .menu-button:hover {background-color:#e0e0e4;}
             @media(min-width:960px) {
               body {font-size:16px}
@@ -155,7 +155,7 @@ injectGlobal`
               .schedule-container .schedule-item + .schedule-item {margin-left:18px}
               .schedule-container .schedule-item + .merged-cell {height:60px;}
               .menu-select-button {margin-top:39px;padding-bottom:0px;}
-              .menu-button {font-size: 16px;margin-right: 14px;padding: 11px 16px 11px 16px;}
+              .menu-button {font-size: 16px;margin-right: 14px;padding: 11px 16px 11px 16px;border: 2px solid #e0e0e4;}
             }
 `
 
