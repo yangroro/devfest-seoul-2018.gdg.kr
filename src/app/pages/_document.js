@@ -16,13 +16,12 @@ injectGlobal`
             .main-nav{display:none}
             amp-sidebar{width:84.375%;background:white;padding:35px 0;}
             .side-nav a{display:block;padding:11px 12px;font-size:20px;color:#6f6f6f}
-            .hero{position:relative;padding-top:137.5%;max-height:1000px;background:url('/static/app@2x.jpg') center center no-repeat;background-size:cover;box-sizing:border-box}
+            .hero{position:relative;padding-top:137.5%;max-height:900px;background:url('/static/app@2x.jpg') center center no-repeat;background-size:cover;box-sizing:border-box}
             .hero h1 {}
-            .hero-contents{position:absolute;left:0;right:0;top:55%;transform:translate(0, -50%)}
+            .hero-contents{position:absolute;left:0;right:0;top:51%;transform:translate(0, -50%)}
             .hero-contents h1 {width:84.6875%;max-width:638px;margin:auto}
-            .hero-contents::after{content:'';display:block;width:100%;padding-top:54.875%;background:url(/static/hero-camp@m.png) 0 0 no-repeat;background-size:contain;}
-            .hero .event-info {position:absolute;bottom:43px;left:50%;transform:translate(-50%, 0);font-size:25px;color:#6a9e3f;text-align:center}
-            .hero .date {display:block;font-size:32px}
+            .hero .event-info {position:absolute;bottom:43px;left:50%;transform:translate(-50%, 0);font-size:14px;color:#6a9e3f;text-align:center}
+            .hero .date {display:block;font-size:17px}
             .btn-set{margin-top:20px;}
             .btn{display:inline-block;padding:7px 21px 6px;margin:0 15px;border-radius:15px;background-color:#00796b;box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.5)}
             .link-set{margin-top:20px;text-align:right}
@@ -32,7 +31,14 @@ injectGlobal`
             .section p {margin:15px 0 0}
             .section > h1 {font-size:2em}
             .section > section > h1 {font-size: 1.3em;margin:1.5em 0 1em}
-            .dino-wrapper {margin:21px 1.875% 31px}
+            .dino-wrapper {margin:21px 0 31px}
+            .dino-wrapper img {width: 98%;}
+            .home-session {background-color: #f9f9f9;}
+
+            .schedule-home-section {width:100%;margin:auto;margin-top:76px}
+            .schedule-home-section h1 {font-size:20px;font-weight:bold;color:#012552;text-align:center;margin-bottom:15px;}
+            .schedule-home-section .btn-more {display: block;width: 209px;font-size: 20px;font-weight: 500;color: #fff;padding: 7px 20px;margin: 0px auto;background: #00796b;border-radius: 15px;border-top-right-radius: 0;box-sizing: border-box;}
+
             .program-hero {}
             .program-hero section {padding:50px 20px 20px 20px;box-sizing:border-box;color:white;text-align:center;border-radius:20px;border-top-right-radius:0}
             .program-hero section h1 {color: white;margin:0}
@@ -89,29 +95,31 @@ injectGlobal`
               .btn-apply {padding:18px 26px 16px;background-color:#00796b;border-radius:15px;border-top-right-radius:0;border:2px solid #fff}
               .logo {display:block;font-size:36px;}
               .logo a {display:block;}
-              .hero {background-image:url(/static/hero-bg.jpg);padding:0;height:1000px}
-              .hero-contents::after {width:933px;height:353px;padding:0;background-image:url(/static/hero-camp.png);margin:auto}
+              .hero {background-image:url(/static/hero-bg.jpg);padding:0;height:900px}
+              .hero .event-info {font-size:20px;}
+              .hero .date {font-size:32px}
               .info {display:flex;width:940px;margin:auto}
               .info .section {width:456px}
               .info .section + .section {margin-left:24px}
               .section + .speaker{margin-bottom:75px}
               .section {width:940px;margin:47px auto}
+              .dino-wrapper img {width: 438px;}
               .camp {}
-              .camp a {display:block;width:1237px;height:464px;margin:auto;background:url(/static/devfest-camp@2x.png) 0 0 no-repeat;background-size:cover}
+              .camp a {display:block;width:1237px;height:464px;margin:auto;background:url(/static/devfest-camp@2x.png) 0 0 no-repeat;background-size:cover;}
               .camp a span {display:block;font-size:32px;font-weight:bold;color:#012552;padding:159px 0 0;text-align:center;}
-              .schedule-home-section {width:920px;margin:auto}
+              .schedule-home-section {width:920px;margin-top:0px;}
               .schedule-home-section h1 {font-size:32px;font-weight:bold;color:#012552;text-align:center;margin-bottom:42px}
               .schedule-home-list {display:flex}
               .schedule-home-item {width:296px;height:361px;border-radius:15px;border-top-right-radius:0;border:1px solid #d8d8d8}
               .schedule-home-item + .schedule-home-item {margin-left:16px}
-              .schedule-home-item .schedule-home-figure {height:160px;background:#ebebeb}
+              .schedule-home-item .schedule-home-figure {height:160px;}
               .schedule-home-info {padding:16px 10px;font-size:14px;font-weight:500}
               .schedule-home-meta {display:flex;justify-content:space-between;margin-bottom:8px}
               .schedule-home-title {font-size:22px;font-weight:bold;margin-bottom:8px}
               .schedule-home-desc {margin-bottom:8px}
               .schedule-home-section .btn-more {display:block;width:243px;font-size:22px;font-weight:500;color:#fff;padding:15px 30px;margin:20px auto;background:#00796b;border-radius:15px;border-top-right-radius:0;box-sizing:border-box;}
               .program-hero-container {display:flex;flex-wrap:wrap;width:940px;margin:0px auto}
-              .program-hero section {width:460px;margin:16px 0}
+              .program-hero section {width:460px;margin:0}
               .program-hero section:nth-of-type(2n) {margin-left:18px}
               .place-card {position:absolute;right:132px;top:52px;width:456px;height:457px}
               .place-info .place-card h1 {padding:175px 25px 24px}

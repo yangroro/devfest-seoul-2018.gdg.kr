@@ -6,9 +6,9 @@ export default class Place extends Component {
       <section>
         <h1 className="blind">Place</h1>
         <div className="place-info">
-          <amp-iframe width="320" 
-            height="150" 
-            frameborder="0" 
+          <amp-iframe width="320"
+            height="150"
+            frameborder="0"
             sandbox="allow-scripts allow-same-origin"
             layout="responsive"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.2104195572015!2d127.07098231562158!3d37.550105979801046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca4daa73c863f%3A0xd6bd626e0463b230!2z7IS47KKF64yA7ZWZ6rWQIOq0keqwnO2GoOq0gA!5e0!3m2!1sen!2skr!4v1536198269425"></amp-iframe>

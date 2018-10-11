@@ -137,7 +137,7 @@ export default class Meditation extends Component {
   render() {
     return (<MeditationContainer>
       <MeditationIntroWeb radius="15px">
-        <DinoImg src="./static/meditation-dino@3x.png"  />
+        <DinoImg src="/static/meditation-dino@3x.png"  />
         <MeditationGuide>
           <h1>명상</h1>
           <div style={{marginTop: 8+'px'}}>
@@ -147,7 +147,7 @@ export default class Meditation extends Component {
       </MeditationIntroWeb>
 
       <MeditationIntroMobile>
-        <DinoImg src="./static/meditation-dino@3x.png"  />
+        <DinoImg src="/static/meditation-dino@3x.png"  />
       </MeditationIntroMobile>
       <MeditationGuideMobile>
         <h1>명상</h1>

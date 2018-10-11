@@ -139,7 +139,7 @@ export default class Codelab extends Component {
   render() {
     return (<CodelabContainer>
       <CodelabIntroWeb radius="15px">
-        <DinoImg src="./static/codelab-img.png"  />
+        <DinoImg src="/static/codelab-img.png"  />
         <CodelabGuide>
           <h1>코드랩</h1>
           <div style={{marginTop: 8+'px'}}>
@@ -150,7 +150,7 @@ export default class Codelab extends Component {
       </CodelabIntroWeb>
 
       <CodelabIntroMobile>
-        <DinoImg src="./static/codelab-img.png"  />
+        <DinoImg src="/static/codelab-img.png"  />
       </CodelabIntroMobile>
       <CodelabGuideMobile>
         <h1>코드랩</h1>
