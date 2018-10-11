@@ -7,3 +7,11 @@ export const radStyle = css`
   border-bottom-left-radius: ${p => p.radius};
   border-bottom-right-radius: ${p => p.radius};
 `
+
+export const enumerize = (...args) => {
+  let cacheStore = {}
+  args.forEach(item => {
+    cacheStore[item] = `${item}`
+  })
+  return cacheStore
+}

@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 import SpeakerModalWrapper from './Modal'
+import { NavConsumer } from '../NavProvider'
 
 const ScheduleItemWrapper = styled.section`
   height: 60px;
@@ -24,8 +25,9 @@ class ScheduleItem extends Component {
     opacity: 0,
   }
 
-  toggleModal = _ => {
-    this.setState(prevState => ({ isOpen: !prevState.isOpen }))
+  toggleModal = cb => {
+    cb(!this.state.isOpen),
+      this.setState(prevState => ({ isOpen: !prevState.isOpen }))
   }
 
   afterOpen = () => {
@@ -44,101 +46,113 @@ class ScheduleItem extends Component {
   render() {
     const { session, startTime, endTime } = this.props
     return (
-      <ScheduleItemWrapper
-        onClick={this.toggleModal}
-        className="schedule-item"
-        lang={session.lang}
-      >
-        <div className="schedule-item-meta">
-          {session.category === 'Mobile' ? (
-            <div
-              className="schedule-item-category"
-              style={{ backgroundColor: '#8bc34a' }}
+      <NavConsumer>
+        {({ actions }) => {
+          return (
+            <ScheduleItemWrapper
+              onClick={() => {
+                this.toggleModal(actions.toggleModal)
+              }}
+              className="schedule-item"
+              lang={session.lang}
             >
-              {session.category}
-            </div>
-          ) : (
-            ''
-          )}
-          {session.category === 'Web' ? (
-            <div
-              className="schedule-item-category"
-              style={{ backgroundColor: '#43a6f5' }}
-            >
-              {session.category}
-            </div>
-          ) : (
-            ''
-          )}
-          {session.category === 'Cloud' ? (
-            <div
-              className="schedule-item-category"
-              style={{ backgroundColor: '#3f51b5' }}
-            >
-              {session.category}
-            </div>
-          ) : (
-            ''
-          )}
-          {session.category === 'ML' ? (
-            <div
-              className="schedule-item-category"
-              style={{ backgroundColor: '#fbbc05' }}
-            >
-              {session.category}
-            </div>
-          ) : (
-            ''
-          )}
-          {session.category === 'Assistant' ? (
-            <div
-              className="schedule-item-category"
-              style={{ backgroundColor: '#e2513a' }}
-            >
-              {session.category}
-            </div>
-          ) : (
-            ''
-          )}
-          <div className="schedule-item-language">{session.lang}</div>
-        </div>
-        <h1 className="schedule-item-title">{session.title}</h1>
-        <div className="schedule-item-info">{session.sub_title}</div>
-        <div className="schedule-item-speaker">
-          <div className="schedule-item-speaker-name">
-            {session.speaker.map(data => data.name).join('/')}
-          </div>
-          <div className="schedule-item-speaker-thumb">
-            {session.speaker.map(data => {
-              return (
-                <div
-                  className="speaker-thumb-image"
-                  style={{
-                    backgroundImage: 'url(' + data.thumb + ')',
-                    backgroundSize: 'cover',
-                    backgroundPosition: 'center center',
-                    backgroundRepeat: 'no-repeat',
-                    width: '35px',
-                    height: '35px',
-                    borderRadius: '50%',
-                  }}
-                />
-              )
-            })}
-          </div>
-        </div>
-        <SpeakerModalWrapper
-          isOpen={this.state.isOpen}
-          afterOpen={this.afterOpen}
-          beforeClose={this.beforeClose}
-          onBackgroundClick={this.toggleModal}
-          onEscapeKeydown={this.toggleModal}
-          opacity={this.state.opacity}
-          session={session}
-          startTime={startTime}
-          endTime={endTime}
-        />
-      </ScheduleItemWrapper>
+              <div className="schedule-item-meta">
+                {session.category === 'Mobile' ? (
+                  <div
+                    className="schedule-item-category"
+                    style={{ backgroundColor: '#8bc34a' }}
+                  >
+                    {session.category}
+                  </div>
+                ) : (
+                  ''
+                )}
+                {session.category === 'Web' ? (
+                  <div
+                    className="schedule-item-category"
+                    style={{ backgroundColor: '#43a6f5' }}
+                  >
+                    {session.category}
+                  </div>
+                ) : (
+                  ''
+                )}
+                {session.category === 'Cloud' ? (
+                  <div
+                    className="schedule-item-category"
+                    style={{ backgroundColor: '#3f51b5' }}
+                  >
+                    {session.category}
+                  </div>
+                ) : (
+                  ''
+                )}
+                {session.category === 'ML' ? (
+                  <div
+                    className="schedule-item-category"
+                    style={{ backgroundColor: '#fbbc05' }}
+                  >
+                    {session.category}
+                  </div>
+                ) : (
+                  ''
+                )}
+                {session.category === 'Assistant' ? (
+                  <div
+                    className="schedule-item-category"
+                    style={{ backgroundColor: '#e2513a' }}
+                  >
+                    {session.category}
+                  </div>
+                ) : (
+                  ''
+                )}
+                <div className="schedule-item-language">{session.lang}</div>
+              </div>
+              <h1 className="schedule-item-title">{session.title}</h1>
+              <div className="schedule-item-info">{session.sub_title}</div>
+              <div className="schedule-item-speaker">
+                <div className="schedule-item-speaker-name">
+                  {session.speaker.map(data => data.name).join('/')}
+                </div>
+                <div className="schedule-item-speaker-thumb">
+                  {session.speaker.map(data => {
+                    return (
+                      <div
+                        className="speaker-thumb-image"
+                        style={{
+                          backgroundImage: 'url(' + data.thumb + ')',
+                          backgroundSize: 'cover',
+                          backgroundPosition: 'center center',
+                          backgroundRepeat: 'no-repeat',
+                          width: '35px',
+                          height: '35px',
+                          borderRadius: '50%',
+                        }}
+                      />
+                    )
+                  })}
+                </div>
+              </div>
+              <SpeakerModalWrapper
+                isOpen={this.state.isOpen}
+                afterOpen={this.afterOpen}
+                beforeClose={this.beforeClose}
+                onBackgroundClick={() => {
+                  this.toggleModal(actions.toggleModal)
+                }}
+                onEscapeKeydown={() => {
+                  this.toggleModal(actions.toggleModal)
+                }}
+                opacity={this.state.opacity}
+                session={session}
+                startTime={startTime}
+                endTime={endTime}
+              />
+            </ScheduleItemWrapper>
+          )
+        }}
+      </NavConsumer>
     )
   }
 }
