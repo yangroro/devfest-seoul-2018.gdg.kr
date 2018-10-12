@@ -3,7 +3,7 @@ import Nav from './Nav'
 import styled, { css } from 'styled-components'
 import { NavConsumer } from '../NavProvider'
 import { ON_MOBILE } from '../constants'
- 
+
 const HeaderWrapper = styled.div`
   text-shadow: white 0px 0px 15px;
   position: fixed;
@@ -34,8 +34,9 @@ const HeaderWrapper = styled.div`
     !p.modalOpen &&
     css`
       color: white;
-      padding: 30px 30px;
+      padding: 25px 30px;
       background-color: rgba(0, 121, 107, 1);
+      box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
       .btn-apply {
         box-shadow: none;
       }
@@ -44,7 +45,6 @@ const HeaderWrapper = styled.div`
         background-color: rgba(0, 121, 107, 1);
         padding: 7px 30px;
       }
-
     `};
 
   ${p =>
@@ -115,7 +115,10 @@ export default class Header extends Component {
             className="header"
           >
             <div className="header-container">
-              <button className="tab hamburger" onClick={this.props.toggleSideNavDrawer}>
+              <button
+                className="tab hamburger"
+                onClick={this.props.toggleSideNavDrawer}
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
