@@ -184,6 +184,7 @@ const ModalSpeakerIntro = styled.div`
 `
 
 const SocialButton = styled.img`
+  margin: 0 5px;
   height: 26px;
 `
 
@@ -262,7 +263,16 @@ const SpeakerModalWrapper = ({
       </Row>
     </Row>
     <Row margin="1.5em 0 1.5em 0" verticalCenter>
-      <SocialButton src="/static/modal/social-facebook.png" />
+      {Object.entries(session.speaker[0].link).map(([type, link]) => {
+        return (
+          <SocialButton
+            onClick={() => {
+              window.open(link)
+            }}
+            src={`/static/modal/social-${type}.png`}
+          />
+        )
+      })}
     </Row>
   </SpeakerModal>
 )

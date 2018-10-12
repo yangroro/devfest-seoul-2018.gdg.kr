@@ -4,6 +4,7 @@ import styled, { css } from 'styled-components'
 import { NavConsumer } from '../NavProvider'
 
 const HeaderWrapper = styled.div`
+  text-shadow: white 0px 0px 15px;
   position: fixed;
   top: 0;
   left: 0;
