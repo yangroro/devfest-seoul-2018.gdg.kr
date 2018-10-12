@@ -8,7 +8,7 @@ class Navigation extends Component {
         <ul>
           <li className="home" onClick={this.props.onComponentClicked}>
             <Link href="/">
-              <a>Home</a>
+              <a>HOME</a>
             </Link>
           </li>
           <li onClick={this.props.onComponentClicked}>
