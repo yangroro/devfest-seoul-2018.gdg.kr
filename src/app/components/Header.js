@@ -102,7 +102,7 @@ export default class Header extends Component {
             className="header"
           >
             <div className="header-container">
-              <button className="tab hamburger" on="tap:sidebar.toggle">
+              <button className="tab hamburger" onClick={this.props.toggleSideNavDrawer}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
