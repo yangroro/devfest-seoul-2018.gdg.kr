@@ -14,7 +14,9 @@ export default class SideNav extends Component {
         onClose={this.toggleSideNavDrawerFromItself(false)}
         onOpen={this.toggleSideNavDrawerFromItself(true)}
       >
-        <Nav className="side-nav" />
+        <Nav
+          className="side-nav"
+          onComponentClicked={this.toggleSideNavDrawerFromItself(false)} />
       </SwipeableDrawer>
     )
   }
