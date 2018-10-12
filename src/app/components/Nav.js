@@ -7,7 +7,7 @@ class Navigation extends Component {
       <nav className={this.props.className}>
         <ul>
           <li className="home">
-            <a href="/">Home</a>
+            <a href="/">HOME</a>
           </li>
           <li>
             <Link href="/timetable">
@@ -21,7 +21,7 @@ class Navigation extends Component {
           </li>
           <li>
             <Link href="/code_of_conduct">
-              <a>Code of Conduct</a>
+              <a>CODE OF CONDUCT</a>
             </Link>
           </li>
         </ul>
