@@ -23,7 +23,7 @@ class Navigation extends Component {
           </li>
           <li onClick={this.props.onComponentClicked}>
             <Link href="/code_of_conduct">
-              <a>Code of Conduct</a>
+              <a>CODE OF CONDUCT</a>
             </Link>
           </li>
         </ul>

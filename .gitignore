@@ -4,3 +4,4 @@ dist/
 src/app/.next/
 .idea/
 .firebase/
+firebase-debug.log
