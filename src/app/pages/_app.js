@@ -11,8 +11,6 @@ class MyApp extends App {
   };
 
   toggleSideNavDrawer = () => {
-    console.log("toggleSideNavDrawer");
-    console.log("toggleSideNavDrawer", "!this.state.isSideNavDrawerOpened", !this.state.isSideNavDrawerOpened);
     this.setSideNavDrawerOpened(!this.state.isSideNavDrawerOpened);
   };
 
@@ -34,7 +32,6 @@ class MyApp extends App {
 
   render() {
     const { Component, pageProps } = this.props
-    console.log("this.state.isSideNavDrawerOpened", this.state.isSideNavDrawerOpened);
 
     return (
       <NavProvider>
