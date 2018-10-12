@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import Nav from './Nav'
 import styled, { css } from 'styled-components'
 import { NavConsumer } from '../NavProvider'
-
+import { ON_MOBILE } from '../constants'
+ 
 const HeaderWrapper = styled.div`
   position: fixed;
   top: 0;
@@ -10,7 +11,7 @@ const HeaderWrapper = styled.div`
   right: 0;
   z-index: 100;
   color: ${p => (p.white ? 'white ' : 'rgba(0, 121, 107, 1)')};
-  padding: 20px 30px;
+  padding: 40px 30px;
   transition: all 0.3s ease;
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
@@ -22,16 +23,27 @@ const HeaderWrapper = styled.div`
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   }
 
+  @media ${ON_MOBILE} {
+    background-color: rgba(0, 121, 107, 1);
+    padding: 15px 30px;
+  }
+
   ${p =>
     p.sticky &&
     !p.modalOpen &&
     css`
       color: white;
-      padding: 8px 30px;
+      padding: 30px 30px;
       background-color: rgba(0, 121, 107, 1);
       .btn-apply {
         box-shadow: none;
       }
+
+      @media ${ON_MOBILE} {
+        background-color: rgba(0, 121, 107, 1);
+        padding: 7px 30px;
+      }
+
     `};
 
   ${p =>
