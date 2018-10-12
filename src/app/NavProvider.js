@@ -17,7 +17,6 @@ class NavProvider extends Component {
     },
     toggleModal: isOpen =>
       this.setState(() => {
-        console.log('isModal open?', isOpen)
         return { modalOpen: isOpen }
       }),
   }

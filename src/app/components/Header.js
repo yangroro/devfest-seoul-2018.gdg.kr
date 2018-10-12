@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Nav from './Nav'
 import styled, { css } from 'styled-components'
-import { ON_MOBILE } from '../constants'
 import { NavConsumer } from '../NavProvider'
 
 const HeaderWrapper = styled.div`
