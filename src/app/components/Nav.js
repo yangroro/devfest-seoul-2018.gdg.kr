@@ -6,32 +6,35 @@ class Navigation extends Component {
     return (
       <nav className={this.props.className}>
         <ul>
-          <li className="home">
-            <a href="/">Home</a>
+          <li className="home" onClick={this.props.onComponentClicked}>
+            <Link href="/">
+              <a>Home</a>
+            </Link>
           </li>
-          <li>
+          <li onClick={this.props.onComponentClicked}>
             <Link href="/timetable">
               <a>SCHEDULE</a>
             </Link>
           </li>
-          <li>
+          <li onClick={this.props.onComponentClicked}>
             <Link href="/team">
               <a>TEAM</a>
             </Link>
           </li>
-          <li>
+          <li onClick={this.props.onComponentClicked}>
             <Link href="/code_of_conduct">
-              <a>Code of Conduct</a>
+              <a>CODE OF CONDUCT</a>
             </Link>
           </li>
         </ul>
-        <a
-          href="https://festa.io/events/88"
-          target="_blank"
-          className="btn-apply"
-        >
-          신청하기
-        </a>
+        <li onClick={this.props.onComponentClicked}>
+          <a
+            href="https://festa.io/events/88"
+            target="_blank"
+            className="btn-apply">
+            신청하기
+          </a>
+        </li>
       </nav>
     )
   }

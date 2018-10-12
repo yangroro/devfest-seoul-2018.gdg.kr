@@ -107,7 +107,7 @@ class ScheduleItem extends Component {
                 ) : (
                   ''
                 )}
-                <div className="schedule-item-language">{session.lang}</div>
+                <div className="schedule-item-hall">{session.hall.length > 0 && session.hall + ' hall'}</div>
               </div>
               <h1 className="schedule-item-title">{session.title}</h1>
               <div className="schedule-item-info">{session.sub_title}</div>
