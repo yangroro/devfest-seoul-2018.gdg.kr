@@ -16,11 +16,11 @@ class Navigation extends Component {
               <a>SCHEDULE</a>
             </Link>
           </li>
-          <li onClick={this.props.onComponentClicked}>
+          {/* <li onClick={this.props.onComponentClicked}>
             <Link href="/team">
               <a>TEAM</a>
             </Link>
-          </li>
+          </li> */}
           <li onClick={this.props.onComponentClicked}>
             <Link href="/code_of_conduct">
               <a>CODE OF CONDUCT</a>
