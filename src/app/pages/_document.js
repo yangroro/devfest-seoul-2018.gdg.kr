@@ -58,7 +58,7 @@ injectGlobal`
             .footer-container .copyright {color:#afafaf;}
             .contact h1 {font-size:20px}
             .contact p {font-weight:300}
-            .coc {padding-top:55px;}
+            .coc {}
             .coc p {margin:15px 0}
             .coc .coc-section {margin-top: 25px;margin-bottom:40px;}
             .coc-section .coc-language {display:inline-block;background-color:#00796b;color:#ffffff;font-size:1.2em;padding:5px 11px;}
@@ -129,7 +129,7 @@ injectGlobal`
               .footer-info {display:flex;justify-content:space-between;align-items:center;margin-bottom:55px}
               .contact h1 {font-size:32px;font-weight:bold}
               .contact p {font-size:20px;color:#464646}
-              .coc {padding-top:76px;}
+              .coc {}
               .coc .coc-section {margin-top:35px;margin-bottom:65px;}
               .coc-section .coc-language{margin-bottom:7px;}
               .coc-section section{margin:26px 0;}
