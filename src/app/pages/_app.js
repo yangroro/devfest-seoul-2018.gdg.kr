@@ -6,22 +6,6 @@ import Footer from '../components/Footer'
 import { NavProvider } from '../NavProvider'
 
 class MyApp extends App {
-  state = {
-    isSideNavDrawerOpened: false,
-  };
-
-  toggleSideNavDrawer = () => {
-    console.log("toggleSideNavDrawer");
-    console.log("toggleSideNavDrawer", "!this.state.isSideNavDrawerOpened", !this.state.isSideNavDrawerOpened);
-    this.setSideNavDrawerOpened(!this.state.isSideNavDrawerOpened);
-  };
-
-  setSideNavDrawerOpened = (isOpened) => {
-    this.setState({
-      isSideNavDrawerOpened: isOpened,
-    })
-  };
-
   static async getInitialProps({ Component, ctx }) {
     let pageProps = {}
 
@@ -34,17 +18,13 @@ class MyApp extends App {
 
   render() {
     const { Component, pageProps } = this.props
-    console.log("this.state.isSideNavDrawerOpened", this.state.isSideNavDrawerOpened);
 
     return (
       <NavProvider>
         <Container>
           <Component {...pageProps} />
-          <Header
-            toggleSideNavDrawer={this.toggleSideNavDrawer} />
-          <SideNav
-            toggleSideNavDrawer={this.toggleSideNavDrawer}
-            isSideNavDrawerOpened={this.state.isSideNavDrawerOpened} />
+          <Header />
+          <SideNav />
           <Footer />
         </Container>
       </NavProvider>
