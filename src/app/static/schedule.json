@@ -439,7 +439,7 @@
               "info": "카카오뱅크",
               "bio":
                 "카카오뱅크에서 '같지만 다른 은행'을 만들기 위해 노력하고 있는 안드로이드 개발자입니다. 소프트웨어의 품질 향상을 위한 테스팅과 자동화에 관심이 많고 오픈소스 개발을 좋아합니다.",
-              "thumb": "/static/speakers/",
+              "thumb": "/static/speakers/kimyongjun.jpg",
               "link": {
                 "facebook": "",
                 "twitter": "https://twitter.com/imkimkevin",
@@ -452,26 +452,26 @@
         {
           "track": "B",
           "hall": "B",
-          "title": "How to Manage 'SPA State'",
+          "title": "Use JavaScript More Strictly (feat. TypeScript, flow)",
           "sub_title":
-            "SPA에서 사용되는 대표적인 State Management 라이브러리 들을 소개하고, 개발 경험을 공유 합니다.",
+            "타입 시스템 (TypeScript, Flow) 을 이용하여 좀 더 견고한 JavaScript 어플리케이션을 만드는 방법",
           "description":
-            "SPA에는 전역 상태를 관리하는 State Management 도구가 필요합니다. 하지만 수 많은 상태관리 도구가 있고, 이를 적절하게 선택하는 일은 어렵습니다. 이에 각각의 State Management 라이브러리의 특징과 장단점을 살펴보고, 각각 어떠한 문제를 해결하는데 적합 했는지 저의 경험을 통해 이야기 해보고자 합니다.",
+            "JavaScript 에 Type System 을 도입하는 대표적인 방법인 Flow 와 TypeScript 를 알아보고, 개발환경, 생태계 이용, 문법에 대해 비교한다. 타입 시스템을 이용하여 좀 더 견고한 JavaScript 어플리케이션을 만드는 방법에 대해 공유한다.",
           "category": "Web",
           "lang": "ko",
           "difficulty": "",
           "speaker": [
             {
-              "name": "김동우",
-              "info": "주식회사 체커",
+              "name": "이웅재",
+              "info": "Studio XID, Inc.",
               "bio":
-                "14년 경력의 JavaScript Full Stack 개발자, 모르는 것 빼고 다 아는 잡학다식 개발자. React Korea 운영, Facebook Developer Circle Seoul 리더, 자바스크립트 개발자 포럼 운영",
-              "thumb": "/static/speakers/kimdongwoo.jpg",
+                "",
+              "thumb": "/static/speakers/leewoongjae.png",
               "link": {
-                "facebook": "https://www.facebook.com/woo.gim",
-                "twitter": "",
-                "github": "https://github.com/gimdongwoo",
-                "blog": ""
+                "facebook": "https://www.facebook.com/2woongjae",
+                "twitter": "https://twitter.com/2woongjae",
+                "github": "https://github.com/2woongjae",
+                "blog": "https://medium.com/@2woongjae"
               }
             }
           ]
