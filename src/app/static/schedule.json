@@ -613,6 +613,31 @@
               }
             }
           ]
+        },
+        {
+          "track": "D",
+          "hall": "D",
+          "title": "GDG 커뮤니티 세션",
+          "sub_title": "GDG 커뮤니티를 소개하고 함께 이야기 합니다.",
+          "description":
+            "GDG 커뮤니티를 소개하고 커뮤니티에 참여하고 소통하는 방법에 대해 얘기합니다!",
+          "category": "",
+          "lang": "ko",
+          "difficulty": "",
+          "speaker": [
+            {
+              "name": "GDG 오거나이저",
+              "info": "GDG 오거나이저들",
+              "bio":"",
+              "thumb": "/static/speakers/gdg.png",
+              "link": {
+                "facebook": "https://www.facebook.com/gdgkorea",
+                "twitter": "",
+                "github": "",
+                "blog": ""
+              }
+            }
+          ]
         }
       ]
     }
