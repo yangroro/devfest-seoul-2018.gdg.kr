@@ -66,7 +66,7 @@ injectGlobal`
 
             .schedule-list-container {max-width:960px;margin:20px 30px}
             .section-header {padding:58px 0 58px;text-align:center;background:url('/static/devfest-camp@2x.png') center center no-repeat;background-size:cover;background-color:#f9f9f9}
-            .schedule-container {margin-top:74px;}
+            .schedule-container {margin-top:57px;}
             .schedule-container .schedule-row {display:flex;margin:16px 0}
             .schedule-container .schedule-time {font-size:12px;color:#3f3f3f;line-height:1;text-align:center}
             .schedule-container .schedule-time-start {display:block}
