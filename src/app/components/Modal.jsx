@@ -265,12 +265,11 @@ const SpeakerModalWrapper = ({
     <Row margin="1.5em 0 1.5em 0" verticalCenter>
       {Object.entries(session.speaker[0].link).map(([type, link]) => {
         return (
-          <SocialButton
-            onClick={() => {
-              window.open(link)
-            }}
-            src={`/static/modal/social-${type}.png`}
-          />
+          link.length > 0 && <a href={link} target="_blank">
+            <SocialButton
+                src={`/static/modal/social-${type}.png`}
+            />            
+          </a>
         )
       })}
     </Row>

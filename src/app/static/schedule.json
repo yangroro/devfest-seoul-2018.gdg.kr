@@ -20,7 +20,6 @@
               "bio": "",
               "thumb": "",
               "link": {
-                "mail": "",
                 "facebook": "",
                 "twitter": "",
                 "github": "",
@@ -51,7 +50,6 @@
               "bio": "",
               "thumb": "",
               "link": {
-                "mail": "",
                 "facebook": "",
                 "twitter": "",
                 "github": "",
@@ -83,7 +81,6 @@
               "bio": "현재 Lablup ('래블업') CTO를 맡아 Backend.AI를 개발하고 있으며, 다양한 규모의 백엔드 시스템에 대한 분석 및 구현 경험을 가지고 있습니다. 오픈소스 활동을 통해 Textcube, iPuTTY, Python, DPDK, pyzmq, aiodocker, aiohttp 등의 프로젝트에 기여해왔고 KOSSLAB 글로벌 오픈프론티어로도 활동하고 있습니다.",
               "thumb": "/static/speakers/kimjoongi.jpg",
               "link": {
-                "mail": "daybreaker12@gmail.com",
                 "facebook": "",
                 "twitter": "",
                 "github": "https://github.com/achimnol",
@@ -108,7 +105,7 @@
               "bio": "2015년부터 3년간 드라마앤컴퍼니에서 명함관리 앱 리멤버를 개발하였습니다. GDE Android로 활동하며 한동대 4학년에 재학하고 있습니다. 다양한 아키텍쳐에 관심이 많습니다. 여행을 좋아하며 개발 아이돌을 꿈꿉니다.",
               "thumb": "/static/speakers/leeseungmin.png",
               "link": {
-                "mail": "",
+                
                 "facebook": "https://www.facebook.com/maryangmin",
                 "twitter": "https://twitter.com/maryangmin",
                 "github": "https://github.com/maryangmin",
@@ -133,10 +130,9 @@
               "bio": "Jbee라는 필명으로 글을 쓰는 프론트엔드 엔지니어입니다. 생산성과 문서화에 관심이 많으며 타입스크립트를 좋아합니다.",
               "thumb": "/static/speakers/hanjaeyeop.jpeg",
               "link": {
-                "mail": "ljyhanll@gmail.com",
                 "facebook": "",
                 "twitter": "",
-                "github": "github.com/JaeYeopHan",
+                "github": "https://github.com/JaeYeopHan",
                 "blog": ""
               }
             }
@@ -158,7 +154,6 @@
               "bio": "데이터마이닝 연구실을 졸업하고 모 대기업 연구소에서 일하다가, 살아서 팔딱팔딱 뛰는(?) 'Real-world' 데이터를 다루고 싶어 연구소를 뛰쳐나오게 되었고, 자산관리 서비스를 만들고 있는 Rainist에 합류하여 Data Scientist로 일하고 있습니다. 뱅크샐러드 서비스에 필요한 데이터 분석, 머신러닝 서비스 개발을 담당하고 있습니다. 데이터로부터 지금보다 더 많은 가치를 만들고, 더 멋진 서비스를 만드는 것을 꿈꾸고 있습니다.",
               "thumb": "/static/speakers/jeoninah.png",
               "link": {
-                "mail": "inahjeon5324@gmail.com",
                 "facebook": "",
                 "twitter": "",
                 "github": "",
@@ -190,7 +185,6 @@
               "bio": "현 서울대기계항공 공학 석사과정 재학중. 딥러닝 하드웨어와 로보틱스 HCI 에 관심이 많음. GPS / INS 결합 스마트폰 보행자항법에 딥러닝을 적용하는 연구 진행중. 항공우주연구원 큐브위성경연대회 수상, 드론, IoT 센서디바이스 데이터 클라우드 딥러닝 연구 ",
               "thumb": "/static/speakers/yangseoyeon.jpg",
               "link": {
-                "mail": "howtowhy@gmail.com",
                 "facebook": "https://www.facebook.com/seoyeon.stella.yang",
                 "twitter": "",
                 "github": "",
@@ -203,7 +197,6 @@
               "bio": "현 용인외대부고 3학년 학생으로 스피치와 헬스케어 분야의 딥러닝에 관심이 많음. 지난 여름에 딥러닝캠프를 참여해 Conditional WaveGAN을 만들었고, 지난 겨울에는 2개월 동안 인공지능연구원에서 GAN을 이용한 프로젝트를 수행함.",
               "thumb": "/static/speakers/leechaeyoung.png",
               "link": {
-                "mail": "cylee@hafs.hs.kr",
                 "facebook": "https://www.facebook.com/cylee.ml",
                 "twitter": "",
                 "github": "",
@@ -228,7 +221,6 @@
               "bio": "2014년 부터 안드로이드 개발을 시작해 현재는 레이니스트에서 뱅크샐러드 안드로이드 앱을 개발하고 있습니다. 컨퍼런스에서 세션듣기를 좋아하고 함수형 프로그래밍과 테스팅에 관심을 가지고 있습니다.",
               "thumb": "/static/speakers/parkmireuk.jpg",
               "link": {
-                "mail": "mkcode2014@gmail.com",
                 "facebook": "",
                 "twitter": "",
                 "github": "",
@@ -253,7 +245,6 @@
               "bio": "14년 경력의 JavaScript Full Stack 개발자, 모르는 것 빼고 다 아는 잡학다식 개발자. React Korea 운영, Facebook Developer Circle Seoul 리더, 자바스크립트 개발자 포럼 운영",
               "thumb": "/static/speakers/kimdongwoo.jpg",
               "link": {
-                "mail": "gimdongwoo@gmail.com",
                 "facebook": "https://www.facebook.com/woo.gim",
                 "twitter": "",
                 "github": "https://github.com/gimdongwoo",
@@ -278,7 +269,6 @@
               "bio": "Jessica Dene Earley-Cha is a Developer Advocate for Google Assistant. She loves to connect with developers and explore VUI (voice user interface) to add another dimension to how user interact with technology. Jessica is a full stack developer who enjoys sharing knowledge and support others. Jessica is the co-organizer for Google Developers Group San Francisco, is a Women Techmakers lead and a teacher for Girl Develop It. You’ll find her either spending time with her dog, collecting strawberry knick knack or coding one of her many personal projects.",
               "thumb": "/static/speakers/jessica.jpg",
               "link": {
-                "mail": "jessica.dene.earley@gmail.com",
                 "facebook": "",
                 "twitter": "https://twitter.com/chatasweetie,",
                 "github": "",
@@ -310,7 +300,6 @@
               "bio": "=Dongseok Yang is currently a Ph.D. candidate at the Department of Applied Computer Engineering, Dankook University, and is a researcher at Wearable Thinking Center. He was a software engineer to develop HCI devices for rehabilitation in Neofect Inc. His interests include interaction with vision, image processing, and interaction devices.",
               "thumb": "/static/speakers/yangdongseok.png",
               "link": {
-                "mail": "MLdongseok@gmail.com",
                 "facebook": "https://facebook.com/mldongseok",
                 "twitter": "",
                 "github": "",
@@ -335,7 +324,6 @@
               "bio": "소프트웨어 엔지니어로 서버관리부터 개발까지 여러가지 일을 하고 있습니다. 개발자를 편하게 해주는 자동화 기술과 효율적인 개발 프로세스에 관심이 많습니다. DevOps와 관련된 툴에 관심이 많고 ruby on rails와 go언어를 좋아합니다.",
               "thumb": "/static/speakers/kimchungseop.png",
               "link": {
-                "mail": "subicura@subicura.com",
                 "facebook": "https://facebook.com/subicura",
                 "twitter": "https://twitter.com/subicura",
                 "github": "",
@@ -360,8 +348,7 @@
               "bio": "Festa 라는 프로젝트를 시작하고 관리하는 Software Engineer, 현재 GDG Campus Korea의 오거나이저로 활동 하고 있습니다.",
               "thumb": "/static/organizers/kevin.jpg",
               "link": {
-                "mail": "tost8295@gmail.com",
-                "facebook": "fb.com/kevinoriginal123",
+                "facebook": "https://facebook.com/kevinoriginal123",
                 "twitter": "",
                 "github": "",
                 "blog": ""
@@ -385,7 +372,6 @@
               "bio": "국내 외 여러 회사를 거쳐 현재 우아한형제들에서 라이더스 모바일 개발을 하는 장인수 입니다. ",
               "thumb": "/static/speakers/janginsoo.jpg",
               "link": {
-                "mail": "isjang98@gmail.com",
                 "facebook": "https://www.facebook.com/profile.php?id=100001430553804",
                 "twitter": "",
                 "github": "",
@@ -417,7 +403,6 @@
               "bio": "카카오뱅크에서 '같지만 다른 은행'을 만들기 위해 노력하고 있는 안드로이드 개발자입니다. 소프트웨어의 품질 향상을 위한 테스팅과 자동화에 관심이 많고 오픈소스 개발을 좋아합니다.",
               "thumb": "/static/speakers/",
               "link": {
-                "mail": "imkimkevin@gmail.com",
                 "facebook": "",
                 "twitter": "https://twitter.com/imkimkevin",
                 "github": "https://github.com/kimkevin",
@@ -442,7 +427,6 @@
               "bio": "14년 경력의 JavaScript Full Stack 개발자, 모르는 것 빼고 다 아는 잡학다식 개발자. React Korea 운영, Facebook Developer Circle Seoul 리더, 자바스크립트 개발자 포럼 운영",
               "thumb": "/static/speakers/kimdongwoo.jpg",
               "link": {
-                "mail": "gimdongwoo@gmail.com",
                 "facebook": "https://www.facebook.com/woo.gim",
                 "twitter": "",
                 "github": "https://github.com/gimdongwoo",
@@ -467,7 +451,6 @@
               "bio": "안녕하세요 손은주입니다. 저는 한양대학교 정보시스템학과 재학중이며 에드테크 스타트업인 매스프레소에서 Devops 개발자로 일하고 있습니다. Github username은 EJSohn이며  2017년 Let's Swift 스피커, 2018년 Pycon 스피커로 발표한 경험이 있습니다.",
               "thumb": "/static/speakers/soneunju.png",
               "link": {
-                "mail": "5on.3un.7oo@gmail.com",
                 "facebook": "https://www.facebook.com/profile.php?id=100007905910861",
                 "twitter": "",
                 "github": "https://github.com/EJSohn",
@@ -492,7 +475,6 @@
               "bio": "오픈 소스 개발자, 주요 Contribute project (TensorFlow, OpenStack, OPNFV, Backend.AI), 오픈 소스 공개 강의 (국민대, 경북대, Kaist, 부산대, 숭실대, 한양대 등 대학강의, 한국전자통신연구원, 신한은행, Ericsson-LG 등 기업 특강)",
               "thumb": "/static/speakers/jomanseok.jpg",
               "link": {
-                "mail": "hephaex@gmail.com",
                 "facebook": "",
                 "twitter": "",
                 "github": "https://github.com/hephaex",
@@ -524,7 +506,6 @@
               "bio": "GDG 안드로이드 챕터 운영진을 맡고있고 캐시슬라이드를 서비스하는 NBT에서 안드로이드개발자로 일하고있는 정현지입니다.",
               "thumb": "/static/organizers/hyunji.jpg",
               "link": {
-                "mail": "chunghj09@gmail.com",
                 "facebook": "",
                 "twitter": "",
                 "github": "",
@@ -549,7 +530,6 @@
               "bio": "현재 Samsung Internet 웹 브라우저를 개발하고 있습니다. 오픈소스에 대한 관심으로 Chromium/Blink 프로젝트를 비롯해 W3C, Node.js 등 웹 플랫폼 관련 프로젝트에 꾸준히 기여하고 있습니다. GDG Suwon의 운영진으로도 활동하고 있습니다.",
               "thumb": "/static/speakers/bangjinho.png",
               "link": {
-                "mail": "zino@chromium.org",
                 "facebook": "",
                 "twitter": "",
                 "github": "https://github.com/romandev",
@@ -574,7 +554,6 @@
               "bio": "대전대학교 전자정보통신공학과 4학년 재학중인 학부생입니다. 딥러닝과 강화학습에 관심이 많고 대학원 진학 예정입니다. 현재 캐글코리아 운영진으로 활동하고 있습니다.",
               "thumb": "/static/speakers/kimjoontae.jpg",
               "link": {
-                "mail": "kjt7889@naver.com",
                 "facebook": "https://www.facebook.com/kjt7889",
                 "twitter": "",
                 "github": "",
