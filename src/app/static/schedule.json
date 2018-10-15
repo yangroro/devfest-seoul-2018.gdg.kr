@@ -247,7 +247,7 @@
         {
           "track": "C",
           "hall": "C",
-          "title": "How to Manage `SPA State`",
+          "title": "실전 SPA 상태관리 톺아보기",
           "sub_title":
             "SPA에서 사용되는 대표적인 State Management 라이브러리 들을 소개하고, 개발 경험을 공유 합니다.",
           "description":
@@ -464,8 +464,7 @@
             {
               "name": "이웅재",
               "info": "Studio XID, Inc.",
-              "bio":
-                "",
+              "bio": "",
               "thumb": "/static/speakers/leewoongjae.png",
               "link": {
                 "facebook": "https://www.facebook.com/2woongjae",
@@ -628,7 +627,7 @@
             {
               "name": "GDG 오거나이저",
               "info": "GDG 오거나이저들",
-              "bio":"",
+              "bio": "",
               "thumb": "/static/speakers/gdg.png",
               "link": {
                 "facebook": "https://www.facebook.com/gdgkorea",
