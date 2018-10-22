@@ -3,8 +3,12 @@ import styled from 'styled-components'
 import { ON_MOBILE, radStyle } from '../constants.js'
 
 const SpecialSession = styled.div`
-  margin-top: 32px;
+  margin-top: 70px;
   padding-bottom: 45px;
+
+  @media ${ON_MOBILE} {
+    margin-top: 30px;
+  }
 
   & h1 {
     text-align: center;
@@ -76,7 +80,7 @@ export default class Programs extends Component {
   render() {
     return (
       <SpecialSession radius="15px">
-        <h1>CODELAB / MEDITATION</h1>
+        <h1 style={{color: '#012552'}}>CODELAB / MEDITATION</h1>
         <SessionListWrapper>
           <div className="program-hero-container">
             <section className="codelab">

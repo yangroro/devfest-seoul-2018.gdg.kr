@@ -60,12 +60,10 @@ export default class ScheduleHome extends Component {
                   <div class="schedule-home-language">KO</div>
                 </div>
                 <div class="schedule-home-title">
-                  빠르다는 것 그 이상, Isomorphic PWA (feat. SSR +
-                  Code-splitting)
+                  빠르다는 것 그 이상, Isomorphic PWA
                 </div>
                 <div class="schedule-home-desc">
-                  SReact + TypeScript로 짜인 PWA에 Server Rendering과
-                  Code-splitting 등을 적용한 최적의 UX와 퍼포먼스 알아보기
+                React + TypeScript로 짜인 PWA에 SSR과 Code-splitting 등을 적용한 최적의 UX
                 </div>
                 <div
                   class="schedule-home-speaker"
