@@ -479,7 +479,7 @@
           "track": "C",
           "hall": "C",
           "title": "go와 gRPC로 함께하는 MicroService",
-          "sub_title": "REST 개발자가 접한 신세계",
+          "sub_title": "google이 만든 gRPC로 super fast한 원격 통신을 직접 해보자(HTTP/2,IDL,Protocol Buffers,Server-Client communication)",
           "description":
             "golang을 사용해 새로이 Server-Client Communication 방법으로 비상하고 있는 RPC framework인 gRPC 서버를 만들어보고 클라이언트(웹, 혹은 모바일) 와 통신하는 예제를 소개합니다. 그리고 이 기술이 MicroService에서 어떤 의미가 있는지 알아봅니다. ",
           "category": "Cloud",
@@ -490,7 +490,7 @@
               "name": "손은주",
               "info": "매스프레소",
               "bio":
-                "안녕하세요 손은주입니다. 저는 한양대학교 정보시스템학과 재학중이며 에드테크 스타트업인 매스프레소에서 Devops 개발자로 일하고 있습니다. Github username은 EJSohn이며  2017년 Let's Swift 스피커, 2018년 Pycon 스피커로 발표한 경험이 있습니다.",
+                "한양대 정보시스템학과 재학중, 자유로운 스타트업 스타일 개발자, Server, Devops, iOS 에 관심이 많습니다.",
               "thumb": "/static/speakers/soneunju.png",
               "link": {
                 "facebook":
