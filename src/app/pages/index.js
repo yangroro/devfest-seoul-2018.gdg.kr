@@ -6,6 +6,7 @@ import Hero from '../components/Hero';
 import Programs from '../components/Programs';
 import Camp from '../components/Camp';
 import ScheduleHome from '../components/ScheduleHome';
+import Sponsors from '../components/Sponsors'
 
 export default () => (
   <div>
@@ -22,6 +23,7 @@ export default () => (
         <Camp />
         <ScheduleHome />
         <Programs />
+        <Sponsors />
       </div>
       <Place />
     </main>
