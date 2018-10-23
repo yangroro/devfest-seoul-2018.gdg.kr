@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
 import styled from 'styled-components'
-import { ON_MOBILE, radStyle } from '../constants.js'
-
-// const cracker9 = require('../static/sponsors/cracker9.png');
-// const festa = require('../static/sponsors/festa.png');
-// const gdg = require('../static/sponsors/gdg.png');
-// const kakaopay = require('../static/sponsors/kakaopay.png');
-// const yogiyo = require('../static/sponsors/yogiyo.png');
+import { ON_MOBILE } from '../constants.js'
 
 const SponsorsContainer = styled.div`
   margin-top: 32px;
@@ -29,7 +23,7 @@ const LogoListContainer = styled.div`
 
   @media ${ON_MOBILE} {
     width: 100%;
-    text-align: center;    
+    text-align: center;
   }
 
   & h1 {
@@ -51,7 +45,6 @@ const LogoListContainer = styled.div`
 
 const LogoContainer = styled.div`
   width: 296px;
-  margin-right: 16px;
   margin-bottom: 17px;
   text-align: center;
   display: inline-block;
@@ -61,8 +54,8 @@ const LogoContainer = styled.div`
     width: 100%;
     margin: 0;
     text-align: center;
-    padding: 20px 0;   
-    display: inline-block; 
+    padding: 20px 0;
+    display: inline-block;
   }
 `;
 
@@ -73,11 +66,12 @@ export default class Sponsors extends Component {
       <SponsorsContainer>
         <LogoListContainer>
           <h1>Sponsors</h1>
-          <LogoContainer><img src='../static/sponsors/cracker9.png' style={{height: 36+'px'}}/> </LogoContainer>
-          <LogoContainer><img src='../static/sponsors/festa.png' style={{height: 36+'px'}}/> </LogoContainer>
           <LogoContainer><img src='../static/sponsors/gdg.png' style={{height: 36+'px'}}/> </LogoContainer>
+          <LogoContainer><img src='../static/sponsors/banksalad.png' style={{height: 29+'px'}}/> </LogoContainer>
           <LogoContainer><img src='../static/sponsors/kakaopay.png' style={{height: 36+'px'}}/> </LogoContainer>
           <LogoContainer><img src='../static/sponsors/yogiyo.png' style={{height: 36+'px'}}/> </LogoContainer>
+          <LogoContainer><img src='../static/sponsors/cracker9.png' style={{height: 36+'px'}}/> </LogoContainer>
+          <LogoContainer><img src='../static/sponsors/festa.png' style={{height: 36+'px'}}/> </LogoContainer>
         </LogoListContainer>
       </SponsorsContainer>
     )
