@@ -567,7 +567,7 @@
           "title": "Chromium/Blink는 어떻게 동작하는가?",
           "sub_title": "Modern Web Browser의 내부 구조",
           "description":
-            "Chrome의 오픈소스 Chromium이 어떻게 동작하는지 살펴봅니다. 구체적으로 다음과 같은 내용을 다룹니다.<br />- 웹 브라우저와 웹 서버<br />- HTML은 어떻게 해석되어 그림으로 변환되는가? (Blink Rendering)<br />- Blink와 V8은 어떻게 연결되는가?<br />- Blink와 Chromium, 그리고 Content API (Multi-process architecture)<br />- GPU Compositing (하드웨어 가속)<br />- 그 밖에 것들",
+            "Chrome의 오픈소스 Chromium이 어떻게 동작하는지 살펴봅니다. 구체적으로 다음과 같은 내용을 다룹니다. 웹 브라우저와 웹 서버 / HTML은 어떻게 해석되어 그림으로 변환되는가? (Blink Rendering) / Blink와 V8은 어떻게 연결되는가? / Blink와 Chromium, 그리고 Content API (Multi-process architecture) / GPU Compositing (하드웨어 가속) / 그 밖에 것들",
           "category": "Web",
           "lang": "ko",
           "difficulty": "",
