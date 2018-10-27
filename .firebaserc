@@ -1,6 +1,7 @@
 {
   "projects": {
     "default": "gdg-devfest-seoul-2018",
-    "dev": "gdg-devfest-18-dev"
+    "dev": "gdg-devfest-18-dev",
+    "release": "gdg-devfest-seoul-2018"
   }
 }
