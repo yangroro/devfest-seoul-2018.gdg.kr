@@ -223,7 +223,7 @@
           "title": "함수형 프로그래밍과 안드로이드 테스팅",
           "sub_title":
             "함수형 프로그래밍 개념을 적용해 안드로이드 testing 개선 과정 공유",
-          "description": "",
+          "description": "이번 세션에서는, 안드로이드에서 Test code 작성이 어려운 이유와 실제 코드를 작성했던 경험에 대해 이야기합니다. 테스트 가능한 코드를 분리하기 좋은 MVP 패턴의 대한 고민부터 테스트 코드 작성에 많은 아이디어를 준 함수형 프로그래밍의 기본 개념까지 공유하고자 합니다.",
           "category": "Mobile",
           "lang": "ko",
           "difficulty": "",
@@ -541,22 +541,22 @@
           "hall": "A",
           "title": "Android Oreo&Pie 업데이트하기",
           "sub_title":
-            "안드로이드 업데이트사항을 함께 알아보고 적용해볼수 있도록 합니다.",
-          "description": "",
+            "새로운 Android Version 업데이트 사항을 체크하고 적용 & 주의해야 할점들을 함께 알아봅니다.",
+          "description": "작년 8월 Oreo가 새로 발표되고 서서히 애플리케이션에 8.0을 대응하며 업데이트 한지 얼마 안 된 것 같은 기분이 들었지만!! 약 1년 후 올해 새롭게 Pie가 발표되었고 이제는 Pie가 업데이트되어있는 단말들이 나오기 시작했습니다. 최신 업데이트 대응은 우리의 애플리케이션 서비스에 꼭 필요한 작업입니다. 함께 어떠한 중요한 업데이트 사항이 있는지 알아보고 꼭 체크해야 할 사항들과 적용하는 방법 등을 함께 알아봅니다.",
           "category": "Mobile",
           "lang": "ko",
           "difficulty": "Beginner",
           "speaker": [
             {
               "name": "정현지",
-              "info": "NBT",
+              "info": "NBT Inc.",
               "bio":
-                "GDG 안드로이드 챕터 운영진을 맡고있고 캐시슬라이드를 서비스하는 NBT에서 안드로이드개발자로 일하고있는 정현지입니다.",
+                "캐시슬라이드, 캐시슬라이드 스텝업, 더퀴즈라이브를 서비스하는 NBT에서 안드로이드 개발자로 고군분투하고있는 정현지 입니다.",
               "thumb": "/static/organizers/hyunji.jpg",
               "link": {
                 "facebook": "",
                 "twitter": "",
-                "github": "",
+                "github": "https://github.com/hyunji92",
                 "blog": ""
               }
             }
