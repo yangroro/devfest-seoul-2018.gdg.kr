@@ -69,7 +69,7 @@ const ScheduleItem = styled.section`
   }
 
   @media ${ON_MOBILE} {
-    height: 76px;
+    height: auto;
     padding: 0 16px;
 
     & + & {
@@ -82,8 +82,9 @@ const ScheduleItem = styled.section`
     }
 
     & .venue {
-      position: absolute;
-      bottom: 12px;
+      position: relative;
+      margin-top: 30px;
+      margin-bottom: -7px;
     }
 
     & h1 {

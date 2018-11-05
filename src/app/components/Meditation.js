@@ -63,6 +63,14 @@ const MeditationGuideMobile = styled.div`
   }
 `;
 
+const MeditationListContainer = styled.div`
+  @media ${ON_MOBILE} {
+    display: block;
+    max-width: 960px;
+    margin: 20px 30px;
+  }
+`;
+
 const SessionRowList = ({ list, ...time }) => (
   <ModalProvider>
     <div className="meditation-item-row">
@@ -114,9 +122,7 @@ export default class Meditation extends Component {
         </div>
       </MeditationGuideMobile>
 
-      <div className="meditation-list-container">
-        {meditationList}
-      </div>
+      <MeditationListContainer>{meditationList}</MeditationListContainer>
     </MeditationContainer>
   }
 }
