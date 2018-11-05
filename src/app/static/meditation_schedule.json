@@ -1,0 +1,61 @@
+{
+    "schedules": [{
+        "start_time": "16:35",
+        "end_time": "17:15",
+        "type": "special_session",
+        "sessionList": [
+          {
+            "track": "",
+            "hall": "지하1층 컨퍼런스룸 3",
+            "title": "마인드풀니스로 일상의 스트레스를 감소시키는 노하우",
+            "description": "이 수업에서는 명상에 관심이 있어서 스타트하고자하는 비기너들부터 경험자들까지 아울러 1) 마인드풀니스를 바르게 이해하는 시간, 2) 명상훈련이 스트레스를 감소시키는 과학적인 근거 소개와 3) 자신의 일상생활에 마인드풀니스를 간편하게 적용할 수 있는 방법을 안내받고 또 체험하는 시간입니다. 마인드풀니스에 대해 평상시에 궁금했던 점도 충분히 공유하고 속시원한 답변을 얻어가는 시간이 될 수 있습니다!",
+            "category": "Meditation",
+            "lang": "",
+            "difficulty": "",
+            "speaker": [
+                {
+                    "name": "민진희",
+                    "info": "자이요가명상",
+                    "bio": "커리어의 첫 10년은 회계사로 활동, 그 이후 20년 가까이 명상에 전념한 민진희원장은 국내에서 가장 유명한 요가명상 센터인 자이요가명상의 모든 명상프로그램 개발 및 명상티쳐들 양성하는데 집중하며, 구글에서 개발한 SIY (Search Inside Yourself) 마인드풀니스 프로그램의 Certified Teacher로서도 활동하고 있습니다.",
+                    "thumb": "/static/meditation.png",
+                    "link": {
+                      "facebook": "",
+                      "twitter": "",
+                      "github": "",
+                      "blog": "http://www.jaiyoga.co.kr/m/jaiTeacherDetail.do?seq=2088"
+                    }
+                  }
+            ]
+          }
+        ]
+      }, {
+        "start_time": "17:30",
+        "end_time": "18:10",
+        "type": "special_session",
+        "sessionList": [
+          {
+            "track": "",
+            "hall": "지하1층 컨퍼런스룸 3",
+            "title": "마인드풀니스로 몸과 마음의 휴식을 맛보기",
+            "description": "바쁜 일상이 연속되다보면, 긴장감과 스트레스가 몸에 쌓이기 마련입니다. 이 수업에서는 멈추지 못하고 Detach되지 않는 마음의 스위치를 끄고, 몸에 누적된 스트레스를 효율적으로 해소하며, 스스로에게 휴식을 주는 방법을 체험해봅니다. 마인드풀니스로 몸과 마음에게 단 몇분이라도 진정한 쉼을 주면, 잠도 잘오고 몸과 마음이 개운해지는 효과를 얻게 되실 것입니다.",
+            "category": "Meditation",
+            "lang": "",
+            "difficulty": "",
+            "speaker": [
+              {
+                "name": "민진희",
+                "info": "자이요가명상",
+                "bio": "커리어의 첫 10년은 회계사로 활동, 그 이후 20년 가까이 명상에 전념한 민진희원장은 국내에서 가장 유명한 요가명상 센터인 자이요가명상의 모든 명상프로그램 개발 및 명상티쳐들 양성하는데 집중하며, 구글에서 개발한 SIY (Search Inside Yourself) 마인드풀니스 프로그램의 Certified Teacher로서도 활동하고 있습니다.",
+                "thumb": "/static/meditation.png",
+                "link": {
+                  "facebook": "",
+                  "twitter": "",
+                  "github": "",
+                  "blog": "http://www.jaiyoga.co.kr/m/jaiTeacherDetail.do?seq=2088"
+                }
+              }
+            ]
+          }
+        ]
+      }]
+}

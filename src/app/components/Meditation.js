@@ -1,4 +1,7 @@
 import React, { Component } from 'react'
+import Data from '../static/meditation_schedule.json'
+import MeditationItem from './MeditationItem'
+import { ModalProvider } from 'styled-react-modal'
 import styled from 'styled-components'
 import { ON_MOBILE, radStyle } from '../constants.js'
 
@@ -60,82 +63,45 @@ const MeditationGuideMobile = styled.div`
   }
 `;
 
-const ScheduleItemRow = styled.div`
-  display: flex;
-  flex: 1;
-  margin-left: 40px;
+const MeditationListContainer = styled.div`
   @media ${ON_MOBILE} {
-    flex: 1;
-    margin-left: 10px;
     display: block;
+    max-width: 960px;
+    margin: 20px 30px;
   }
 `;
 
-const ScheduleItem = styled.section`
-  ${radStyle};
-  display: block;
-  position: relative;
-  flex: 1;
-  padding: 16px;
-  border: 1px solid #fbbc05;
-  font-size: 14px;
-  font-weight: 500;
-  color: #464646;
-  height: 80px;
-
-  & + & {
-    margin-left: 17px;
-  }
-
-  & h1 {
-    margin-top: 10px;
-  }
-
-  & .description {
-    margin: 7px 0;
-  }
-
-  & a {
-    text-decoration: underline;
-  }
-
-  & a:hover {
-    color: #e2513a;
-    cursor: pointer;
-  }
-
-  & .venue {
-    position: absolute;
-    bottom: 20px;
-  }
-
-  @media ${ON_MOBILE} {
-    height: 76px;
-    padding: 0 16px;
-
-    & + & {
-      margin-left: 0;
-      margin-top: 10px;
-    }
-
-    & .category, & .description, & a  {
-      display: none;
-    }
-
-    & .venue {
-      position: absolute;
-      bottom: 12px;
-    }
-
-    & h1 {
-      font-size: 20px;
-    }
-  }
-`;
+const SessionRowList = ({ list, ...time }) => (
+  <ModalProvider>
+    <div className="meditation-item-row">
+      {list.map(session => <MeditationItem {...time} session={session} />)}
+    </div>
+  </ModalProvider>
+)
 
 export default class Meditation extends Component {
+  constructor() {
+    super()
+
+    this.state = {
+      meditationData: Data.schedules,
+    }
+  }
+
   render() {
-    return (<MeditationContainer>
+      let meditationList = this.state.meditationData.map(meditation => {
+        return (
+          <div className="meditation-row">
+            <SessionRowList
+              startTime={meditation.start_time}
+              endTime={meditation.end_time}
+              list={meditation.sessionList}
+            />
+          </div>
+        )
+      })
+
+    return <MeditationContainer>
       <MeditationIntroWeb radius="15px">
         <DinoImg src="/static/meditation-dino@3x.png"  />
         <MeditationGuide>
@@ -156,34 +122,7 @@ export default class Meditation extends Component {
         </div>
       </MeditationGuideMobile>
 
-      <div style={{maxWidth: 960+'px', margin: 20+'px '+30+'px'}}>
-        <div className="schedule-row">
-          <div className="schedule-time">
-            <span className="schedule-time-start">14:40</span>
-            <span className="schedule-item-end">16:05</span>
-          </div>
-          <ScheduleItemRow>
-            <ScheduleItem radius="15px">
-              <h1>명상</h1>
-              <div className="venue">장소: TBD</div>
-            </ScheduleItem>
-          </ScheduleItemRow>
-        </div>
-        <div className="schedule-row">
-          <div className="schedule-time">
-            <span className="schedule-time-start">16:20</span>
-            <span className="schedule-item-end">17:55</span>
-          </div>
-          <ScheduleItemRow>
-            <ScheduleItem radius="15px">
-              <h1>명상</h1>
-              <div className="venue">장소: TBD</div>
-            </ScheduleItem>
-          </ScheduleItemRow>
-        </div>
-      </div>
-
-      </MeditationContainer>
-    )
+      <MeditationListContainer>{meditationList}</MeditationListContainer>
+    </MeditationContainer>
   }
 }

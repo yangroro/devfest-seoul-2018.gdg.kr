@@ -47,12 +47,12 @@ export default class CoC extends Component {
               <p>We are all members of the same community. Welcome others kindly and friendly. Be warm. Be someone who anyone would like to be with.</p>
             </section>
             <section>
-              <h1>2. Always be responsible for your words and actions.</h1>
-              <p>Being accountable for words and actions applies to one and all as we are members of the same community. Any kind of behavior causing problems should be fixed immediately after acknowledged. If anyone felt uncomfortable or disrespected in any kind of form, this is considered a behavior that is causing problem and as we mentioned, should be fixed.</p>
+              <h1>2. Respect each other.</h1>
+              <p>Active discussion helps to build a better developer ecosystem, but only in a respectful way. Try to understand, resolve conflicts, and be a sympathetic audience.</p>
             </section>
             <section>
               <h1>3. Always be responsible for your words and actions.</h1>
-              <p>Active discussion helps to build a better developer ecosystem, but only in a respectful way. Try to understand, resolve conflicts, and be a sympathetic audience.</p>
+              <p>Being accountable for words and actions applies to one and all as we are members of the same community. Any kind of behavior causing problems should be fixed immediately after acknowledged. If anyone felt uncomfortable or disrespected in any kind of form, this is considered a behavior that is causing problem and as we mentioned, should be fixed.</p>
             </section>
             <section>
               <h1>4. Participate actively.</h1>
