@@ -26,6 +26,7 @@ const CodelabIntroWeb = styled.div`
 const CodelabIntroMobile = styled.div`
   display: none;
   @media ${ON_MOBILE} {
+    margin-top: 17px;
     display: flex;
     background-color: #e2513a;
     align-items: center;
@@ -172,7 +173,7 @@ export default class Codelab extends Component {
               <h1>Actions on Google</h1>
               <div className="description">구글에서 공개한 인공지능 비서 서비스인 Google Assistant에 들어갈 수 있는 소프트웨어를 Actions on google을 통해 만들어보실 수 있는 시간입니다.</div>
               <a href="https://codelabs.developers.google.com/codelabs/actions-1/#0" target="_blank" className="link">Actions on Google Codelab 공식 문서</a>
-              <div className="venue">장소: TBD</div>
+              <div className="venue">지하 1층 컨퍼런스 룸 3</div>
             </ScheduleItem>
 
             <ScheduleItem radius="15px">
@@ -180,7 +181,7 @@ export default class Codelab extends Component {
                 <h1>Flutter</h1>
                 <div className="description">Flutter은 구글이 공개한 모바일 앱 SDK 로, Flutter을 통해 iOS와 안드로이드를 동시에 만들 수 있습니다. 하나의 코드로 iOS와 안드로이드 앱을 모두 만들어본느 시간을 가져보세요!</div>
                 <a href="https://flutter.io/codelabs/" target="_blank" className="link">Flutter 공식 문서</a>
-              <div className="venue">장소: TBD</div>
+              <div className="venue">지하 1층 컨퍼런스 룸 3</div>
             </ScheduleItem>
           </ScheduleItemRow>
         </div>

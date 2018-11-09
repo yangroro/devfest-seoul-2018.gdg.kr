@@ -22,7 +22,7 @@ const ScheduleItemRow = styled.div`
   &:active {
     background-color: #d8d8d8;
   }
-  
+
   @media ${ON_MOBILE} {
     flex: 1;
     margin-left: 10px;
@@ -138,7 +138,7 @@ class MeditationItem extends Component {
               <ScheduleItemRow>
                 <ScheduleItem radius="15px">
                   <h1>{session.title}</h1>
-                  <div className="venue">지하1층 컨퍼런스 룸 3 / 민진희 강사님</div>
+                  <div className="venue">지하1층 컨퍼런스 룸 2 / 민진희 강사님</div>
                 </ScheduleItem>
               </ScheduleItemRow>
             </div>
