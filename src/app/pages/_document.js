@@ -72,10 +72,14 @@ injectGlobal`
             .schedule-container .schedule-time-start {display:block}
             .schedule-container .schedule-time-start::after {content:'-';display:block}
             .schedule-container .schedule-item-row {flex:1;margin-left:20px;margin-top:-3px;}
-            .schedule-container .schedule-item {position:relative;flex:1;padding:12px 13px 12px 13px;border:1px solid #d8d8d8;border-radius:15px;font-size:14px;font-weight:500;color:#464646;height:40px;display: flex;justify-content: center;flex-direction: column;margin-bottom:5px}
-            .schedule-container .schedule-item-meta {display:none}
+            .schedule-container .schedule-item {position:relative;flex:1;padding:12px 13px 12px 13px;border:1px solid #d8d8d8;border-radius:15px;font-size:14px;font-weight:500;color:#464646;height:86px;display: flex;justify-content: center;flex-direction: column;margin-bottom:5px}
+
+            .schedule-container .schedule-item-meta {display: block; margin-bottom: 7px;}
+            .schedule-container .schedule-item-meta .schedule-item-category {display: inline-block; color: #ffffff;padding-left: 8px;padding-right: 8px; border-radius: 10px; margin-right: 8px;}
+            .schedule-container .schedule-item-meta .schedule-item-hall {display: inline-block;}
+
             .schedule-container .schedule-item .schedule-item-title {font-size:14px}
-            .schedule-container .schedule-item-info {display:none;}
+            .schedule-container .schedule-item-info {display: none;}
             .schedule-container .schedule-item + .merged-cell {height:60px;}
             .schedule-container .schedule-item .schedule-item-speaker {display:none}
             .schedule-container .schedule-item .schedule-item-speaker-thumb {display:none}
@@ -145,8 +149,9 @@ injectGlobal`
               .schedule-container .schedule-item {display:block;position:relative;flex:1;padding:13px 13px 30px;border:1px solid #d8d8d8;border-radius:15px;font-size:14px;font-weight:500;color:#464646;height:205px;}
               .schedule-container .schedule-row:nth-of-type(-n+2) .schedule-item { height: 60px;padding: 18px 0 18px 76px;}
               .schedule-container .schedule-item-meta {display:flex;justify-content:space-between;margin-bottom:12px}
+              .schedule-container .schedule-item-meta .schedule-item-hall {display: block;}
               .schedule-container .schedule-item-meta .schedule-item-category {padding: 4px 8px;font-size: 11px;border-radius: 24px;color:#ffffff}
-              .schedule-container .schedule-item .schedule-item-title {font-size:20px}
+              .schedule-container .schedule-item .schedule-item-title {font-size:20px; margin-top: 14px;}
               .schedule-container .schedule-item .schedule-item-speaker {display:flex;justify-content:space-between;position: absolute; bottom: 20px;width:100%}
               .schedule-container .schedule-item .schedule-item-speaker .schedule-item-speaker-name {padding-top:10px;}
               .schedule-container .schedule-item .schedule-item-speaker-thumb {display:block;right: 27px; position: absolute;}

@@ -56,7 +56,7 @@ class ScheduleItem extends Component {
               className="schedule-item"
               lang={session.lang}
             >
-              <div className="schedule-item-meta">
+              {session.hall && <div className="schedule-item-meta">
                 {session.category === 'Mobile' ? (
                   <div
                     className="schedule-item-category"
@@ -108,7 +108,7 @@ class ScheduleItem extends Component {
                   ''
                 )}
                 <div className="schedule-item-hall">{session.hall.length > 0 && session.hall + ' hall'}</div>
-              </div>
+              </div>}
               <h1 className="schedule-item-title">{session.title}</h1>
               <div className="schedule-item-info">{session.sub_title}</div>
               <div className="schedule-item-speaker">
