@@ -112,6 +112,27 @@ const ModalTitle = styled.div`
   }
 `
 
+const SlideButton = styled.div`
+  font-size: 16px;
+  font-weight: normal;
+  border: 1px solid #d8d8d8;
+  border-radius: 3px;
+  padding: 5px 11px;
+  display: inline-block;
+  margin-left: 13px;
+  vertical-align: text-top;
+  @media ${ON_MOBILE} {
+    font-size: 12px;
+    padding: 4px 9px;
+    vertical-align: bottom;
+    margin-left: 7px;
+  }
+
+  &:hover {
+    background-color: #e0e0e4;
+  }
+`
+
 const DinoImg = styled.div`
   background-image: url(${p => p.url});
   background-size: cover;
@@ -222,7 +243,10 @@ const SpeakerModalWrapper = ({
       <HallInfo>Hall {session.hall}</HallInfo>
     </Row>
     <Row margin="1.5em 0 0 0">
-      <ModalTitle>{session.title}</ModalTitle>
+      <ModalTitle>
+        {session.title}
+        {(session.slide && session.slide.length > 0) && <a href={session.slide} target='_blank'><SlideButton>발표자료</SlideButton></a>}
+      </ModalTitle>
     </Row>
     <Row margin="1.5em 0 0 0">
       <ModalContent>{session.description}</ModalContent>
